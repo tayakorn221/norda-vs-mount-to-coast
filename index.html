@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Norda vs Mount to Coast</title>
+<meta name="description" content="เทียบรองเท้าวิ่ง Norda กับ Mount to Coast ทั้ง 12 รุ่น: สรุปหน้าเดียว ความทนทาน ไซซ์ อากาศไทย และ Norda 055 vs MtC M1">
+<meta property="og:title" content="Norda vs Mount to Coast">
+<meta property="og:description" content="เทียบรองเท้าวิ่ง 12 รุ่น สรุปหน้าเดียว พร้อมรายละเอียดความทนทาน ไซซ์ และอากาศไทย">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f5f3ee; --surface:#fffdf9; --surface-2:#eeebe3; --line:#dcd8ce;
+  --ink:#1b1a17; --ink-2:#55524b; --ink-3:#86827a;
+  --norda:#eb6834; --mtc:#2a78d6;
+  --norda-soft:#fbe4d9; --mtc-soft:#dde9f8;
+  --sole:#3a3833; --warn-bg:#fff4d6; --warn-line:#e0b23c;
+  --good:#1f8a4c; --good-soft:#dcf1e4; --warnc:#a86a00; --warn-soft:#fbefd2; --bad:#c93636; --bad-soft:#fadede;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#121210; --surface:#1b1b19; --surface-2:#262522; --line:#363530;
+    --ink:#f3f1ea; --ink-2:#c3c0b6; --ink-3:#8f8b82;
+    --norda:#d95926; --mtc:#3987e5;
+    --norda-soft:#3a2219; --mtc-soft:#172739;
+    --sole:#0b0b0a; --warn-bg:#3a2f12; --warn-line:#a8842a;
+    --good:#4cc283; --good-soft:#173a26; --warnc:#e0a325; --warn-soft:#3a2f12; --bad:#ef6b6b; --bad-soft:#3d1b1b;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#121210; --surface:#1b1b19; --surface-2:#262522; --line:#363530;
+  --ink:#f3f1ea; --ink-2:#c3c0b6; --ink-3:#8f8b82;
+  --norda:#d95926; --mtc:#3987e5;
+  --norda-soft:#3a2219; --mtc-soft:#172739;
+  --sole:#0b0b0a; --warn-bg:#3a2f12; --warn-line:#a8842a;
+    --good:#4cc283; --good-soft:#173a26; --warnc:#e0a325; --warn-soft:#3a2f12; --bad:#ef6b6b; --bad-soft:#3d1b1b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "IBM Plex Sans Thai",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Anuphan","IBM Plex Sans Thai",sans-serif;line-height:1.25;margin:0}
+h2{font-size:clamp(1.45rem,3.2vw,1.9rem);margin-bottom:.35rem}
+h3{font-size:1.1rem}
+p{margin:.5rem 0}
+.num{font-variant-numeric:tabular-nums}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+section.wrap{padding:64px 16px 8px}
+.kicker{font:600 .8rem/1 "Anuphan",sans-serif;letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;margin-bottom:.6rem}
+.lead{color:var(--ink-2);max-width:720px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:760px){.grid2,.grid3{grid-template-columns:1fr}}
+.tag{display:inline-flex;align-items:center;gap:6px;font:600 .78rem/1 "Anuphan",sans-serif;padding:6px 10px;border-radius:99px}
+.tag.n{background:var(--norda-soft);color:var(--ink)} .tag.m{background:var(--mtc-soft);color:var(--ink)}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.dot.n{background:var(--norda)} .dot.m{background:var(--mtc)}
+.muted{color:var(--ink-3);font-size:.88rem}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+nav.top a{flex:none;font:500 .85rem/1 "Anuphan",sans-serif;color:var(--ink-2);text-decoration:none;padding:8px 12px;border-radius:99px;border:1px solid var(--line);background:var(--surface)}
+nav.top a:hover{color:var(--ink);border-color:var(--ink-3)}
+.theme-btn{flex:none;margin-left:auto;font:500 .85rem/1 "Anuphan",sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);border-radius:99px;padding:8px 12px;cursor:pointer}
+
+/* hero */
+.hero{padding:48px 16px 12px}
+.hero h1{font-size:clamp(2.1rem,6vw,3.6rem);letter-spacing:-.01em}
+.hero h1 .n{color:var(--norda)} .hero h1 .m{color:var(--mtc)} .hero h1 .vs{color:var(--ink-3);font-weight:500;font-size:.6em;padding:0 .25em}
+.hero-shoes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0 8px}
+.hero-shoe{padding:14px 16px 10px}
+.hero-shoe svg{width:100%;height:auto;display:block}
+.hero-shoe .cap{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.hero-shoe .cap b{font-family:"Anuphan",sans-serif;font-size:1.1rem}
+@media (max-width:560px){.hero-shoes{grid-template-columns:1fr}}
+.verdict{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:16px}
+.verdict .card{border-top:4px solid var(--line)}
+.verdict .v-n{border-top-color:var(--norda)} .verdict .v-m{border-top-color:var(--mtc)} .verdict .v-k{border-top-color:var(--ink)}
+.verdict h3{margin-bottom:.4rem}
+.verdict ul{margin:.3rem 0 0;padding-left:1.1rem}
+.big{font:700 2.4rem/1.1 "Anuphan",sans-serif}
+@media (max-width:760px){.verdict{grid-template-columns:1fr}}
+
+/* anatomy */
+.anat{display:grid;grid-template-columns:150px 1fr 1fr;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface)}
+.anat > div{padding:16px;border-top:1px solid var(--line)}
+.anat > .h{border-top:0;font:600 .95rem/1.3 "Anuphan",sans-serif;background:var(--surface-2)}
+.anat .layer{background:var(--surface-2);display:flex;flex-direction:column;gap:8px}
+.anat .layer b{font-family:"Anuphan",sans-serif}
+.anat .layer svg{width:110px;height:auto}
+.anat .mat{font:600 1rem/1.35 "Anuphan",sans-serif;margin-bottom:4px}
+.anat .so{margin-top:8px;font-size:.9rem;color:var(--ink-2);border-left:3px solid var(--line);padding-left:10px}
+.anat .cn .so{border-left-color:var(--norda)} .anat .cm .so{border-left-color:var(--mtc)}
+@media (max-width:760px){
+  .anat{grid-template-columns:1fr}
+  .anat > .h{display:none}
+  .anat .cn::before{content:"Norda";display:block;font:700 .75rem/1 "Anuphan";color:var(--norda);letter-spacing:.06em;margin-bottom:6px}
+  .anat .cm::before{content:"Mount to Coast";display:block;font:700 .75rem/1 "Anuphan";color:var(--mtc);letter-spacing:.06em;margin-bottom:6px}
+}
+.term{border-bottom:1.5px dotted var(--ink-3);cursor:help;position:relative}
+.term:focus{outline:2px solid var(--mtc);outline-offset:2px;border-radius:3px}
+.pop{position:absolute;z-index:40;max-width:300px;background:var(--ink);color:var(--bg);font-size:.86rem;line-height:1.55;padding:10px 12px;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.2);pointer-events:none}
+
+/* lacing */
+.lace-wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px;align-items:center}
+.lace-wrap svg{width:100%;height:auto;max-height:420px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:3px;background:var(--surface-2);gap:2px;flex-wrap:wrap}
+.seg button{font:500 .9rem/1 "Anuphan",sans-serif;border:0;background:transparent;color:var(--ink-2);padding:9px 14px;border-radius:99px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.lace-state{transition:opacity .35s}
+@media (max-width:760px){.lace-wrap{grid-template-columns:1fr}}
+
+/* controls */
+select,input[type=range]{font:inherit}
+select{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:8px 10px;max-width:100%}
+.ctrl-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:12px 0}
+label select{max-width:calc(100vw - 72px)}
+.ctrl-row label{max-width:100%;font-size:.9rem;color:var(--ink-2);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+
+/* stack compare */
+.stack-row{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:16px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.stack-row:first-of-type{border-top:0}
+.stack-row svg{width:100%;height:auto;display:block}
+.stack-facts{display:grid;grid-template-columns:repeat(3,auto);gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
+.stack-facts b{display:block;font:700 1.25rem/1.2 "Anuphan",sans-serif;color:var(--ink)}
+@media (max-width:640px){.stack-row{grid-template-columns:1fr}}
+
+/* charts */
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.scrollx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:640px){.scrollx svg{min-width:600px}.scrollx::after{content:"← เลื่อนกราฟซ้ายขวาได้ →";display:block;text-align:center;font-size:.8rem;color:var(--ink-3);margin-top:4px}}
+.chart text{font-family:"IBM Plex Sans Thai",sans-serif;fill:var(--ink-2)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.88rem;color:var(--ink-2);margin:6px 0 10px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.chart .legend svg,.legend svg{width:auto;height:auto;display:inline-block;flex:none;overflow:visible}
+#tip{position:fixed;z-index:50;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,0,0,.18);border-radius:10px;padding:10px 12px;font-size:.85rem;line-height:1.5;max-width:260px;opacity:0;transition:opacity .12s}
+#tip b{font-family:"Anuphan",sans-serif}
+.hit{cursor:pointer}
+
+/* calc */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.calc .side{border-radius:var(--radius);padding:18px;border:1px solid var(--line);background:var(--surface)}
+.calc .side.n{border-top:4px solid var(--norda)} .calc .side.m{border-top:4px solid var(--mtc)}
+.calc output{font:700 1.9rem/1.1 "Anuphan",sans-serif;display:block;margin-top:6px}
+.calc input[type=range]{width:100%;accent-color:var(--ink-2)}
+.calc .row{margin:10px 0}
+.calc .row label{display:flex;justify-content:space-between;font-size:.9rem;color:var(--ink-2)}
+.breakeven{margin-top:16px;padding:16px 18px;border-radius:var(--radius);background:var(--surface-2);font-size:1rem}
+@media (max-width:760px){.calc{grid-template-columns:1fr}}
+
+/* quiz */
+.q{margin:14px 0}
+.q > div{font:600 1rem/1.4 "Anuphan",sans-serif;margin-bottom:8px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{font:500 .92rem/1.2 "IBM Plex Sans Thai",sans-serif;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:10px 14px;border-radius:12px;cursor:pointer;text-align:left}
+.opts button:hover{border-color:var(--ink-3)}
+.opts button[aria-pressed="true"]{border-color:var(--ink);background:var(--surface-2);box-shadow:inset 0 0 0 1px var(--ink)}
+.result{margin-top:18px;border-radius:var(--radius);padding:20px;border:1px solid var(--line);background:var(--surface);min-height:110px}
+.result .pick{font:700 1.6rem/1.2 "Anuphan",sans-serif;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.result.n{border-left:6px solid var(--norda)} .result.m{border-left:6px solid var(--mtc)}
+
+/* table */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:860px;font-size:.88rem}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 .82rem/1.3 "Anuphan",sans-serif;color:var(--ink-2);background:var(--surface-2);position:sticky;top:0}
+td.r,th.r{text-align:right;white-space:nowrap}
+tr.grp td{background:var(--surface-2);font:700 .85rem/1 "Anuphan",sans-serif;letter-spacing:.04em}
+tbody tr:last-child td{border-bottom:0}
+
+.warn{background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:var(--radius);padding:16px 18px;margin-top:16px}
+.shops{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.shops ul{margin:.4rem 0 0;padding-left:1.1rem}
+@media (max-width:760px){.shops{grid-template-columns:1fr}}
+.src{columns:2;column-gap:28px;font-size:.85rem;padding-left:1.1rem}
+.src li{break-inside:avoid;margin-bottom:4px}
+.src a{color:var(--ink-2)}
+@media (max-width:760px){.src{columns:1}}
+footer{padding:40px 0 60px;color:var(--ink-3);font-size:.85rem}
+a{color:var(--mtc)}
+.badge{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:var(--bg);font:700 .72rem/1 "Anuphan",sans-serif;margin-right:4px;vertical-align:1px}
+.st{display:inline-flex;align-items:center;font:600 .8rem/1 "Anuphan",sans-serif;padding:6px 10px;border-radius:8px;white-space:nowrap;color:var(--ink)}
+.st.good{background:var(--good-soft);box-shadow:inset 3px 0 0 var(--good)}
+.st.warn{background:var(--warn-soft);box-shadow:inset 3px 0 0 var(--warnc)}
+.st.bad{background:var(--bad-soft);box-shadow:inset 3px 0 0 var(--bad)}
+.st.na{background:var(--surface-2);color:var(--ink-2);box-shadow:inset 3px 0 0 var(--ink-3)}
+.anat .cn p,.anat .cm p{margin:.5rem 0 0;font-size:.93rem}
+.tipbox{margin-top:16px;padding:14px 18px;border-radius:var(--radius);background:var(--surface-2);border-left:4px solid var(--ink-3)}
+.sz{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+.sz:first-child,.cl:first-child{border-top:0}
+.chip{flex:none;min-width:64px;text-align:center;font:700 1.05rem/1 "Anuphan",sans-serif;padding:10px 8px;border-radius:10px;color:var(--ink)}
+.chip.n{background:var(--norda-soft)} .chip.m{background:var(--mtc-soft)}
+.cl{padding:10px 0;border-top:1px solid var(--line)}
+.cl-h{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:4px;flex-wrap:wrap}
+.facts{margin:.4rem 0 0;padding-left:1.1rem} .facts li{margin-bottom:6px}
+.wl .st{align-self:start;justify-self:start}
+.wl{display:grid;grid-template-columns:22px 104px 1fr;gap:8px;align-items:start;padding:8px 0;border-top:1px solid var(--line);font-size:.92rem}
+.wl:first-child{border-top:0}
+.wl-n{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:var(--bg);font:700 .72rem/1 "Anuphan",sans-serif;margin-top:2px}
+.wear-list{margin-top:10px}
+@media (max-width:480px){.wl{grid-template-columns:22px 1fr}.wl > span:last-child{grid-column:2}}
+.sum-h{margin:24px 0 10px;font-size:1.05rem}
+.fact{position:relative}
+.fact .big{font-size:1.9rem;margin:10px 0 4px}
+.fact p{margin:0;font-size:.93rem;color:var(--ink-2)}
+.src{display:inline-block;font:600 .72rem/1 "Anuphan",sans-serif;padding:5px 8px;border-radius:6px;background:var(--surface-2);color:var(--ink-2);border:1px solid var(--line)}
+.pick-table{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden}
+.pr{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr) 150px;gap:12px;padding:12px 16px;border-top:1px solid var(--line);align-items:center}
+.pr:first-child{border-top:0}
+.pr-q{color:var(--ink-2);font-size:.95rem}
+.pr-a{padding-left:12px;border-left:4px solid var(--line)}
+.pr-a.n{border-left-color:var(--norda)} .pr-a.m{border-left-color:var(--mtc)}
+.pr-p{text-align:right;color:var(--ink-2);font-size:.9rem}
+@media (max-width:640px){.pr{grid-template-columns:1fr auto}.pr-q{grid-column:1/-1}}
+.more{display:block;margin-top:20px;padding:14px 18px;border-radius:var(--radius);background:var(--ink);color:var(--bg);text-decoration:none;font:600 .95rem/1.4 "Anuphan",sans-serif;text-align:center}
+.divider{margin-top:56px;display:flex;align-items:center;gap:12px;color:var(--ink-3);font:600 .8rem/1 "Anuphan",sans-serif;letter-spacing:.1em}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--line)}
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="สารบัญ"><div class="wrap">
+  <a href="#verdict">สรุป</a><a href="#brands">สองแบรนด์</a><a href="#anatomy">ผ่ารองเท้า</a><a href="#lacing">เชือกสองโซน</a><a href="#stack">ความหนาพื้น</a><a href="#map">แผนที่รุ่น</a><a href="#terrain">พื้นผิว</a><a href="#durability">ทนทาน</a><a href="#fit">ไซซ์</a><a href="#climate">อากาศไทย</a><a href="#stability">มั่นคง</a><a href="#h2h">055 vs M1</a><a href="#price">ราคา</a><a href="#quiz">เลือกให้</a><a href="#specs">สเปก</a><a href="#thai">ซื้อในไทย</a>
+  <button class="theme-btn" id="themeBtn" type="button">โหมดมืด/สว่าง</button>
+</div></nav>
+
+<header class="hero wrap" id="verdict">
+  <div class="kicker">สรุปหน้าเดียว · ข้อมูล ณ ต.ค. 2026</div>
+  <h1><span class="n">Norda</span><span class="vs">vs</span><span class="m">Mount&nbsp;to&nbsp;Coast</span></h1>
+  <p class="lead"><b>Norda</b> ทำรองเท้าสำหรับภูเขาที่มีหินเยอะ แพงแต่ผ้าทนมาก <b>Mount to Coast</b> ทำรองเท้าพื้นหนาสำหรับวิ่งไกลมาก ราคาถูกกว่าราว 40% อ่านข้อมูลออนไลน์ได้แค่ช่วยตัดตัวเลือก <b>สุดท้ายต้องไปลองใส่เองที่ร้าน</b></p>
+
+  <h3 class="sum-h">3 ข้อที่เชื่อได้จริง</h3>
+  <div class="grid3">
+    <div class="card fact"><span class="src">สเปก</span><div class="big num">−40%</div><p>MtC ถูกกว่าในทุกระดับ รุ่นที่ถูกที่สุดของ Norda ($295) ยังแพงกว่ารุ่นที่แพงที่สุดของ MtC ($195)</p></div>
+    <div class="card fact"><span class="src">สเปก</span><div class="big num">21–30 vs 35–42</div><p>พื้นหนาเป็นมิลลิเมตร Norda ส่วนใหญ่พื้นเตี้ย MtC พื้นหนาทุกรุ่น ยกเว้น Norda 055 ที่หนาพอ ๆ กับ MtC</p></div>
+    <div class="card fact"><span class="src">แล็บ + รีวิว</span><div class="big">อากาศร้อน → MtC</div><p>รุ่นที่แล็บวัดของ MtC ระบายอากาศดีกว่าค่าเฉลี่ย ส่วนผ้า Dyneema ของ Norda ผู้รีวิวหลายเจ้าบอกว่าร้อนหรือแห้งช้า</p></div>
+  </div>
+
+  <h3 class="sum-h">ควรลองรุ่นไหน</h3>
+  <div class="pick-table">
+    <div class="pr"><div class="pr-q">วิ่งภูเขา หิน ราก ลาดชันเยอะ</div><div class="pr-a n"><b>Norda 055</b> ถ้าวิ่งไกล · <b>001A</b> หรือ <b>000</b> ถ้าข้อเท้าพลิกง่าย</div><div class="pr-p num">$295–325 · ~฿10,000</div></div>
+    <div class="pr"><div class="pr-q">อัลตร้าบนทางดิน/กรวดที่วิ่งได้ต่อเนื่อง</div><div class="pr-a m"><b>MtC M1</b></div><div class="pr-p num">$195</div></div>
+    <div class="pr"><div class="pr-q">ถนนสลับทางดิน</div><div class="pr-a m"><b>MtC H1</b></div><div class="pr-p num">$160</div></div>
+    <div class="pr"><div class="pr-q">ถนนล้วน (Norda ไม่มีรุ่นถนน)</div><div class="pr-a m"><b>MtC R1</b> ถ้าใช้แข่ง · <b>C1</b> ถ้าใช้ซ้อม</div><div class="pr-p num">฿5,750 · $180</div></div>
+  </div>
+
+  <div class="grid2" style="margin-top:16px">
+    <div class="card"><h3>ไปลองที่ไหน</h3>
+      <p style="margin-top:6px"><span class="dot n"></span> <b>Norda</b> · Banana Run · Run2Paradise · SEEK</p>
+      <p><span class="dot m"></span> <b>MtC</b> · ZICO.BKK (Central ลาดพร้าว ชั้น G) · Banana Run · The Highlandner · SEEK</p>
+      <p class="muted">ฉันยังยืนยันไม่ได้ว่าร้านไทยมี 055, 000 หรือ M1 ควรโทรถามก่อน · ถ้าเจอ Norda ราคาราว ฿3,000 ควรตรวจสอบผู้ขายก่อน</p></div>
+    <div class="card"><h3>ลองที่ร้านให้ได้ผล</h3><ol class="facts" style="margin-top:6px">
+      <li><b>ไซซ์:</b> Norda ลองไซซ์ใหญ่ขึ้น ½–1 ส่วน MtC ลองไซซ์ปกติก่อน ยกเว้น M1 ที่ควรลองใหญ่ขึ้น ½</li>
+      <li>ไปลองช่วงบ่าย หรือหลังวิ่ง ตอนที่เท้าบวมแล้ว</li>
+      <li>ใส่ถุงเท้าวิ่งคู่ที่ใช้จริงไปลอง</li>
+      <li>ยืนแล้วให้ปลายนิ้วโป้งห่างจากหัวรองเท้าราวความกว้างนิ้วโป้ง</li></ol></div>
+  </div>
+
+  <a class="more" href="#brands">รายละเอียดทั้งหมด 15 หัวข้อ เช่น ความทนทาน ไซซ์ อากาศไทย และ 055 vs M1 ↓</a>
+</header>
+
+<div class="wrap divider"><span>รายละเอียด</span></div>
+
+<main>
+<section class="wrap" id="brands">
+  <div class="kicker">01 · ที่มา</div>
+  <h2>สองแบรนด์ แต่ละแบรนด์ตั้งโจทย์ไว้ต่างกัน</h2>
+  <p class="lead">ถ้ารู้ว่าแต่ละแบรนด์ตั้งโจทย์ไว้ยังไง จะเดาได้เกือบหมดว่ารองเท้าออกมาเป็นแบบไหน</p>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card" style="border-left:6px solid var(--norda)">
+      <span class="tag n"><span class="dot n"></span>Norda · มอนทรีออล แคนาดา · ก่อตั้ง 2020</span>
+      <h3 style="margin-top:12px">“เราอยากทำ Lamborghini กับ Range Rover”</h3>
+      <p>ผู้ก่อตั้งคือ Nick กับ Willa Martire นักออกแบบรองเท้าสายแฟชั่นที่เป็นนักวิ่งเทรลด้วย ทั้งสองหารองเท้าที่ทนภูเขาแคนาดาไม่ได้ เลยตั้งใจทำของที่ดีที่สุดโดยไม่ลดต้นทุนแบบแบรนด์ใหญ่</p>
+      <p><b>สิ่งที่ได้:</b> ผ้าด้านบนเป็น Bio-Dyneema ทั้งชิ้น พื้นล่าง Vibram ทุกรุ่น และราคา $285–325</p>
+      <p class="muted">รุ่นหลัก 000 · 001A · 002 · 003 · 005 · 055 · รองเท้าแตะ 008</p>
+    </div>
+    <div class="card" style="border-left:6px solid var(--mtc)">
+      <span class="tag m"><span class="dot m"></span>Mount to Coast · ฮ่องกง · รุ่นแรก 2024</span>
+      <h3 style="margin-top:12px">“รองเท้าสำหรับระยะที่ไกลกว่ามาราธอน”</h3>
+      <p>ทีมพัฒนาเคยทำงานที่ Brooks, Nike และ ASICS หัวหน้าฝ่ายผลิตภัณฑ์คือ Yeti Zhang วิศวกรเคมีที่ทำงานวิจัยวัสดุมา 20 ปี โจทย์ของแบรนด์คือ วิ่งเป็นสิบชั่วโมงแล้วเท้าบวม รองเท้าต้องปรับตามได้</p>
+      <p><b>สิ่งที่ได้:</b> ระบบเชือกสองโซน (TUNEDFIT) โฟมที่บริษัทพัฒนาเอง พื้นหนา และราคา $160–195</p>
+      <p class="muted">รุ่นหลัก R1 · P1 · H1 · C1 · T1 · M1</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="anatomy">
+  <div class="kicker">02 · ผ่ารองเท้า</div>
+  <h2>ผ่าดูทีละชั้น ว่าเงินไปอยู่ส่วนไหน</h2>
+  <p class="lead">รองเท้าวิ่งมีสี่ส่วน คำที่มีเส้นประใต้ แตะหรือชี้ดูคำอธิบายได้ แถบด้านล่างของแต่ละช่องบอกว่าวัสดุนั้นมีผลยังไงตอนใส่จริง</p>
+  <div class="anat" style="margin-top:16px">
+    <div class="h">ชั้น</div><div class="h" style="color:var(--norda)">Norda</div><div class="h" style="color:var(--mtc)">Mount to Coast</div>
+
+    <div class="layer"><b>ส่วนบน</b><span class="muted">ผ้าหุ้มเท้า</span><svg viewBox="0 0 110 50" aria-hidden="true" data-hl="upper"></svg></div>
+    <div class="cn"><div class="mat"><span class="term" tabindex="0" data-def="เส้นใยโพลีเอทิลีนที่ แข็งแรงกว่าเหล็ก 15 เท่าเมื่อเทียบน้ำหนักเท่ากัน ใช้ทำเชือกเรือและเสื้อกันกระสุน แบบ Bio ทำจากวัตถุดิบหมุนเวียน">Bio-Dyneema</span> ทั้งชิ้น</div>
+      ผ้าชิ้นเดียวเชื่อมด้วยเลเซอร์ ไม่มีตะเข็บให้ฉีก
+      <div class="so">ผ้าไม่ขาดแม้ครูดหิน ผู้รีวิวหลายคนใส่จนพื้นหมดแล้ว ผ้ายังดีอยู่ ข้อเสียคือผ้าแข็ง บางรุ่นแบรนด์แนะนำให้ซื้อใหญ่ขึ้นครึ่งไซซ์ถึงหนึ่งไซซ์</div></div>
+    <div class="cm"><div class="mat">ผ้าทอเสริมเส้นใย <span class="term" tabindex="0" data-def="เส้นใยตระกูลเดียวกับ Kevlar ทนการเสียดสีและความร้อน">aramid</span> (T1) · ผ้าตาข่ายทั่วไป (รุ่นถนน)</div>
+      หน้าเท้ากว้าง เผื่อที่ให้นิ้วกาง
+      <div class="so">นุ่มกว่าและใส่สบายตั้งแต่ครั้งแรก ทนพอใช้ แต่ไม่ถึงระดับ Dyneema</div></div>
+
+    <div class="layer"><b>พื้นกลาง</b><span class="muted">โฟมรับแรงกระแทก</span><svg viewBox="0 0 110 50" aria-hidden="true" data-hl="mid"></svg></div>
+    <div class="cn"><div class="mat"><span class="term" tabindex="0" data-def="TPEE (thermoplastic polyester elastomer) ของบริษัท Envalior แบรนด์บอกว่าเด้งกลับ 70% และเด้งกว่าโฟมเดิม 30% แต่เบากว่าราว 10%">Arnitel TPEE</span> (001A, 005, 055) · <span class="term" tabindex="0" data-def="โฟม EVA ที่ Norda กับ Vibram พัฒนาร่วมกัน แน่น มั่นคง ไม่เด้งมาก">Vibram SLE</span> (002, 003)</div>
+      พื้นค่อนข้างบาง 21–30 มม. ยกเว้น 055 ที่หนา 36 มม.
+      <div class="so">ลงเขาแล้วเท้าไม่พลิก รู้สึกถึงพื้นชัด แต่วิ่งถนนยาว ๆ จะรู้สึกว่าแข็ง</div></div>
+    <div class="cm"><div class="mat"><span class="term" tabindex="0" data-def="โฟม supercritical ที่ผสม Pebax (วัสดุเดียวกับรองเท้าแข่งระดับท็อป) เบาและเด้ง">LightCELL</span> · <span class="term" tabindex="0" data-def="โฟม supercritical ที่ทำส่วนหนึ่งจากขยะอินทรีย์และชีวมวล ใช้ใน H1 และ C1">CircleCELL</span> · <span class="term" tabindex="0" data-def="โฟม TPU ตัวใหม่ปี 2026 ใช้ใน M1 ผู้รีวิวบอกว่าคืนพลังงานได้ระดับรองเท้าแข่งถนน">JetCELL</span> + <span class="term" tabindex="0" data-def="แผ่นเสริมในพื้นที่ออกแบบโดยดูช่วงล่างรถแข่ง ช่วยให้พื้นไม่ยุบตัวตามระยะ ผู้รีวิวบอกว่ายังรู้สึกเหมือนเดิมหลัง 800 ไมล์">ZeroSag</span></div>
+      พื้นหนา 27–42 มม.
+      <div class="so">นุ่ม เด้ง เหมาะวิ่งหลายชั่วโมง แต่ในทางหินเอียงจะมั่นคงสู้ Norda ไม่ได้</div></div>
+
+    <div class="layer"><b>พื้นล่าง</b><span class="muted">ยาง + ดอกยาง</span><svg viewBox="0 0 110 50" aria-hidden="true" data-hl="out"></svg></div>
+    <div class="cn"><div class="mat">Vibram <span class="term" tabindex="0" data-def="ยางที่เกาะพื้นเปียกได้ดีที่สุดสูตรหนึ่งของ Vibram รุ่น Elite (ใน 005 และ 055) เป็นสูตรใหม่ที่ทั้งเกาะกว่าและทนกว่า">Megagrip</span> + <span class="term" tabindex="0" data-def="เทคนิคของ Vibram ที่ทำแผ่นยางรองดอกให้บางลง รองเท้าเบาลงโดยดอกยางยังลึกเท่าเดิม">Litebase</span> ทุกรุ่น</div>
+      ดอกยางลึก 4–5 มม.
+      <div class="so">ยึดเกาะหินเปียกได้ดี แต่ดอกยางลึกบนถนนให้ความรู้สึกเหมือนวิ่งบนปุ่ม</div></div>
+    <div class="cm"><div class="mat">Vibram Megagrip (T1, M1) · <span class="term" tabindex="0" data-def="ยางสังเคราะห์ที่เบากว่ายางทั่วไป ใช้ใน R1 ผู้รีวิวบอกว่าใช้ไปหลายร้อยไมล์แทบไม่สึก">CPU</span> (R1) · Versagrip (H1)</div>
+      แต่ละรุ่นใช้ยางต่างกันตามพื้นผิวที่ออกแบบไว้
+      <div class="so">รุ่นเทรลใช้ยาง Vibram เกรดเดียวกับ Norda รุ่นถนนใช้ยางที่ทนการสึก</div></div>
+
+    <div class="layer"><b>เชือก</b><span class="muted">ระบบผูก</span><svg viewBox="0 0 110 50" aria-hidden="true" data-hl="lace"></svg></div>
+    <div class="cn"><div class="mat">เชือกธรรมดาเส้นเดียว</div>
+      ใช้เชือกแบนแบบทั่วไป
+      <div class="so">ถ้าเท้าบวมตอนวิ่ง ต้องแก้เชือกแล้วผูกใหม่ทั้งเส้น</div></div>
+    <div class="cm"><div class="mat"><span class="term" tabindex="0" data-def="ระบบเชือกสองโซนของ Mount to Coast ช่วงหน้าเท้าใช้เชือกรูดกับตัวล็อก ช่วงกลางเท้าถึงข้อเท้าใช้เชือกผูกแบบปกติ ปรับแยกกันได้">TUNEDFIT</span> เชือกสองโซน</div>
+      หน้าเท้าใช้เชือกรูด ช่วงบนใช้เชือกผูก
+      <div class="so">คลายหน้าเท้าได้ในไม่กี่วินาทีโดยข้อเท้ายังกระชับเหมือนเดิม <a href="#lacing">ดูภาพ ↓</a></div></div>
+  </div>
+</section>
+
+<section class="wrap" id="lacing">
+  <div class="kicker">03 · ของที่มีแค่ฝั่ง MtC</div>
+  <h2>เชือกสองโซนช่วยเรื่องเท้าบวมยังไง</h2>
+  <p class="lead">เวลาวิ่งหลายชั่วโมง เท้าจะบวมขึ้น ส่วนใหญ่บวมที่หน้าเท้า รองเท้าที่พอดีตอนออกตัวจะเริ่มบีบนิ้วตอนชั่วโมงหลัง ๆ กดปุ่มด้านล่างเพื่อดูความต่าง</p>
+  <div class="card" style="margin-top:16px">
+    <div class="seg" role="group" aria-label="ช่วงเวลา">
+      <button type="button" data-lace="0" aria-pressed="true">ชั่วโมงแรก</button>
+      <button type="button" data-lace="1" aria-pressed="false">ชั่วโมงที่ 10 · เท้าบวม</button>
+      <button type="button" data-lace="2" aria-pressed="false">คลายเชือกหน้าเท้า</button>
+    </div>
+    <div class="lace-wrap" style="margin-top:12px">
+      <svg id="laceSvg" viewBox="0 0 420 300" role="img" aria-label="ภาพรองเท้ามองจากด้านบน แสดงเชือกสองโซน"></svg>
+      <div>
+        <h3 id="laceTitle">ชั่วโมงแรก: กระชับทั้งคู่</h3>
+        <p id="laceText">ทั้งสองแบรนด์ใส่สบายตอนเริ่มวิ่ง</p>
+        <div class="legend" style="margin-top:12px">
+          <span><span class="dot m"></span>โซนหน้าเท้า (เชือกรูด)</span>
+          <span><span class="dot" style="background:var(--ink-3)"></span>โซนบน (เชือกผูก)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="stack">
+  <div class="kicker">04 · ความหนาพื้น</div>
+  <h2>เทียบความหนาพื้นตามสเกลจริง</h2>
+  <p class="lead">เลือกรุ่นของแต่ละแบรนด์ ภาพวาดใช้สเกลเดียวกัน 1 มม. = 1 หน่วย พื้นหนาช่วยลดแรงกระแทกตอนวิ่งไกล พื้นบางทำให้รู้สึกถึงพื้นและเท้าพลิกยากกว่า</p>
+  <div class="card" style="margin-top:16px">
+    <div class="ctrl-row">
+      <label><span class="dot n"></span>Norda <select id="selN"></select></label>
+      <label><span class="dot m"></span>Mount to Coast <select id="selM"></select></label>
+    </div>
+    <div class="stack-row"><svg id="stackN" viewBox="0 0 320 140" role="img"></svg><div class="stack-facts" id="factsN"></div></div>
+    <div class="stack-row"><svg id="stackM" viewBox="0 0 320 140" role="img"></svg><div class="stack-facts" id="factsM"></div></div>
+    <p class="muted">drop = ความหนาที่ส้นลบความหนาที่ปลายเท้า ตัวเลขยิ่งมาก ยิ่งช่วยให้คนที่ลงส้นเท้าวิ่งได้ง่ายขึ้น · 002 วัดรวมแผ่นรองเท้าด้านใน 5 มม.</p>
+  </div>
+</section>
+
+<section class="wrap" id="map">
+  <div class="kicker">05 · ทุกรุ่นในกราฟเดียว</div>
+  <h2>ความหนาพื้นเทียบกับน้ำหนัก</h2>
+  <p class="lead">Norda ส่วนใหญ่อยู่ฝั่งซ้าย พื้นบางและเบา Mount to Coast อยู่ฝั่งขวาทั้งกลุ่ม มีแค่ Norda 055 (ออก ก.ค. 2026) ที่ข้ามมาฝั่งพื้นหนา ชี้ที่จุดเพื่อดูรายละเอียด</p>
+  <div class="card chart" style="margin-top:16px">
+    <div class="legend"><span><span class="dot n"></span>Norda</span><span><span class="dot m"></span>Mount to Coast</span></div>
+    <div class="scrollx"><svg id="scatter" viewBox="0 0 720 400" role="img" aria-label="กราฟจุด ความหนาพื้นส้นเทียบน้ำหนักของ 12 รุ่น"></svg></div>
+    <p class="muted">น้ำหนักต่อข้าง ข้อมูลจากแบรนด์หรือผู้รีวิว แต่ละแหล่งวัดคนละไซซ์ (US M8.5 กับ M9) ต่างกันราว 10–15 ก. ถ้าสองรุ่นห่างกันแค่ไม่กี่กรัม ถือว่าพอ ๆ กัน</p>
+  </div>
+</section>
+
+<section class="wrap" id="terrain">
+  <div class="kicker">06 · พื้นผิว</div>
+  <h2>รุ่นไหนวิ่งพื้นแบบไหน</h2>
+  <p class="lead">จุดที่สองแบรนด์ต่างกันชัดที่สุดคือพื้นผิวที่ใช้วิ่ง Mount to Coast มีรุ่นตั้งแต่ถนนไปถึงเทรลทั่วไป Norda เริ่มที่ทางดินแล้วไปจบที่ภูเขาเทคนิค ช่วงที่สองแบรนด์ซ้อนกันคือเทรลทั่วไป</p>
+  <div class="card chart" style="margin-top:16px">
+    <div class="scrollx"><svg id="lanes" viewBox="0 0 720 470" role="img" aria-label="แถบแสดงช่วงพื้นผิวที่เหมาะของแต่ละรุ่น"></svg></div>
+    <p class="muted">ช่วงในกราฟ ฉันตีความจากรีวิว เช่น “001A วิ่งถนนไม่ดี” หรือ “M1 ไม่มั่นคงในทางหินเอียง” ไม่ใช่ตัวเลขที่วัดได้ ใช้ดูภาพรวมเท่านั้น</p>
+  </div>
+</section>
+
+<section class="wrap" id="durability">
+  <div class="kicker">07 · ความทนทาน</div>
+  <h2>ใช้ได้นานต่างกันแค่ไหน</h2>
+  <p class="lead">ตอบสั้น ๆ: จากรีวิวที่ใส่จริง <b>Norda ใช้ได้นานกว่าราว 1.6 เท่า</b> ซึ่งพอ ๆ กับที่แพงกว่า 1.7 เท่า เลยทำให้<b>ต้นทุนต่อกิโลของสองแบรนด์เกือบเท่ากัน</b> ที่ต่างกันจริงคือส่วนที่พังก่อน Norda จะเป็นพื้นยางที่หมดก่อนในขณะที่ผ้ายังดีอยู่ ส่วน MtC พื้นกับส่วนบุส้นทน แต่ผ้าตรงหัวรองเท้าเป็นจุดอ่อน</p>
+
+  <div class="grid3" style="margin-top:16px">
+    <div class="card" style="border-top:4px solid var(--norda)"><div class="muted">Norda 001 · จากรีวิวใส่จริง</div><div class="big num">800–970</div><div>กม. (500–600 ไมล์) แล้วค่อยเอาไปใส่เป็นรองเท้าวิ่งเล่น</div></div>
+    <div class="card" style="border-top:4px solid var(--mtc)"><div class="muted">MtC R1 · ผู้รีวิวคาด</div><div class="big num">480–640</div><div>กม. (300–400 ไมล์) ผู้รีวิวประเมินไว้ตอนใส่ไปได้ 80 กม.</div></div>
+    <div class="card" style="border-top:4px solid var(--ink)"><div class="muted">ต้นทุนต่อกิโล ตามตัวเลขรีวิว</div><div class="big num">฿11.3 vs ฿10.3</div><div>Norda 001A ฿9,950 ÷ 880 กม. เทียบกับ R1 ฿5,750 ÷ 560 กม. <a href="#price">ลองปรับเอง ↓</a></div></div>
+  </div>
+
+  <div class="card chart" style="margin-top:16px">
+    <h3>สิ่งที่แบรนด์บอก เทียบกับที่ผู้รีวิวใส่จริง</h3>
+    <div class="legend" style="margin-top:8px">
+      <span><svg width="26" height="12" aria-hidden="true"><rect x="1" y="1" width="24" height="10" rx="3" fill="none" stroke="var(--ink-2)" stroke-width="1.5" stroke-dasharray="3 2"/></svg>แบรนด์บอก</span>
+      <span><svg width="26" height="12" aria-hidden="true"><rect x="1" y="1" width="24" height="10" rx="3" fill="var(--ink-2)"/></svg>ผู้รีวิวคาด</span>
+      <span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="var(--ink-2)" stroke="var(--surface)" stroke-width="2"/></svg>ระยะที่ใส่ไปแล้วจริง (ชี้ดูรายละเอียด)</span>
+    </div>
+    <div class="scrollx"><svg id="life" viewBox="0 0 720 300" role="img" aria-label="กราฟช่วงอายุการใช้งาน ระหว่างที่แบรนด์บอกกับที่ผู้รีวิวคาด"></svg></div>
+    <p class="muted">สิ่งที่น่าแปลกคือ MtC บอกว่าใช้ได้ “1,000 ไมล์ขึ้นไป” ซึ่งมากกว่าที่ Norda บอก แต่หน้าคำถามที่พบบ่อยของ Norda เองแนะนำให้เปลี่ยนทุก 700 กม. หลักฐานฝั่ง MtC ยังอ่อนกว่า เพราะแบรนด์ยังใหม่ ยังไม่มีใครใส่ครบหลายร้อยกิโลแล้วเขียนรีวิว ตัวเลข Norda ใช้รุ่น 001 ซึ่งมีผ้าและพื้นยางแบบเดียวกับ 001A แต่โฟมคนละตัว</p>
+  </div>
+
+  <h3 style="margin:28px 0 8px">ส่วนไหนพังก่อน</h3>
+  <div class="grid2" style="align-items:center">
+    <div class="card"><svg id="hotShoe" viewBox="0 0 320 140" role="img" aria-label="ภาพรองเท้าระบุ 4 จุดที่สึกหรอ"></svg></div>
+    <div><p>รองเท้าจะสึกที่ 4 จุดนี้ ตารางด้านล่างบอกว่าแต่ละแบรนด์ทนแค่ไหนในแต่ละจุด ฝั่ง MtC ใช้ผล<b>ทดสอบในแล็บ</b>ของ RunRepeat ที่เอาสว่านขัดทุกคู่ด้วยแรงเท่ากัน ฝั่ง Norda ไม่เคยถูกทดสอบในแล็บนี้ เลยใช้<b>รีวิวที่ใส่ระยะยาว</b>แทน</p>
+      <p class="muted">ป้าย: ✔ ทนมาก · ▲ พอใช้ · ✖ จุดอ่อน · ? ยังไม่มีข้อมูล</p></div>
+  </div>
+  <div class="anat" style="margin-top:16px">
+    <div class="h">จุด</div><div class="h" style="color:var(--norda)">Norda</div><div class="h" style="color:var(--mtc)">Mount to Coast</div>
+    <div class="layer"><b><span class="badge">1</span> ผ้าหัวรองเท้า</b><span class="muted">โดนหินเตะ นิ้วดัน</span></div>
+    <div class="cn"><span class="st good">✔ ทนมาก</span><p>ผ้า Dyneema “แทบทำลายไม่ได้” ผู้รีวิวทุกเจ้าบอกตรงกันว่าโฟมหรือพื้นจะหมดก่อนผ้า ใส่ 480 กม. แล้วผ้ายัง “ดูใหม่แบบแปลก ๆ”</p></div>
+    <div class="cm"><span class="st bad">✖ จุดอ่อน</span><p>ผลแล็บ M1 ได้ <b class="num">1/5</b> H1 กับ C1 ได้ <b class="num">2/5</b> (ค่าเฉลี่ยคือ 2.6–3.1) ขนาด H1 ที่มีเส้นใย Kevlar ยังได้แค่ 2/5 ส่วน M1 ชดเชยด้วยการใส่ยางกันชนหุ้มรอบหัวรองเท้า</p></div>
+    <div class="layer"><b><span class="badge">2</span> บุส้นด้านใน</b><span class="muted">เสียดสีตอนใส่-ถอด</span></div>
+    <div class="cn"><span class="st na">? ไม่มีค่าแล็บ</span><p>ไม่มีรีวิวไหนบอกว่าสึก แต่ผู้ใส่ 001A เดินทางไกลเจอตะเข็บที่ส้นบาดเท้าจนเป็นแผล</p></div>
+    <div class="cm"><span class="st good">✔ ทนมาก</span><p>ผลแล็บ H1 กับ M1 ได้ <b class="num">5/5</b> C1 ได้ <b class="num">4/5</b> (ค่าเฉลี่ยคือ 3.1–3.4)</p></div>
+    <div class="layer"><b><span class="badge">3</span> โฟมพื้นกลาง</b><span class="muted">ยุบ ไม่เด้งเหมือนเดิม</span></div>
+    <div class="cn"><span class="st good">✔ ทนมาก</span><p>โฟม EVA ของ 001 ยังดีเกิน 800 กม. ส่วน 005 ใส่ 160 กม. แล้วโฟมยังไม่ยุบ Norda บอกว่าโฟม Arnitel ของ 001A ทนเท่าเดิม</p></div>
+    <div class="cm"><span class="st warn">▲ เคลมดี ยังพิสูจน์ไม่ครบ</span><p>แผ่นเสริม ZeroSag ออกแบบมาให้พื้นไม่ยุบ ผู้รีวิวบอกว่ายังรู้สึกเหมือนเดิมหลัง 800 ไมล์ แต่ยังไม่มีผลแล็บแบบใส่ระยะยาว</p></div>
+    <div class="layer"><b><span class="badge">4</span> พื้นยาง</b><span class="muted">ดอกยางสึก</span></div>
+    <div class="cn"><span class="st warn">▲ ส่วนนี้หมดก่อน</span><p>ยาง Megagrip ทน “เกินคาด” เป็นหลายร้อยไมล์ แต่ผู้รีวิวบอกว่า “พื้นยางคือตัวกำหนดอายุจริงของรองเท้า”</p></div>
+    <div class="cm"><span class="st warn">▲ แล้วแต่รุ่น</span><p>ผลแล็บ (ยิ่งสึกน้อยยิ่งดี): M1 สึก <b class="num">0.8</b> มม. ดีกว่าค่าเฉลี่ย 0.9 · C1 สึก <b class="num">1.0</b> พอ ๆ กับค่าเฉลี่ย 1.1 · H1 สึก <b class="num">1.4</b> แย่กว่าค่าเฉลี่ย 0.9 และยางยังบางกว่าค่าเฉลี่ยทุกรุ่น (1.2–1.5 มม. ค่าเฉลี่ยคือ 1.9–3.1)</p></div>
+  </div>
+
+  <div class="grid2" style="margin-top:16px">
+    <div class="card chart"><h3>MtC ผลแล็บความทนของผ้าหัวรองเท้า</h3><p class="muted" style="margin-top:2px">คะแนน 1–5 ยิ่งสูงยิ่งทน</p>
+      <svg id="labToe" viewBox="0 0 340 150" role="img" aria-label="คะแนนความทนของผ้าหัวรองเท้า เทียบกับค่าเฉลี่ย"></svg></div>
+    <div class="card chart"><h3>MtC ผลแล็บความสึกของพื้นยาง</h3><p class="muted" style="margin-top:2px">มิลลิเมตรที่สึกหลังขัด ยิ่งน้อยยิ่งทน</p>
+      <svg id="labSole" viewBox="0 0 340 150" role="img" aria-label="ความสึกของพื้นยาง เทียบกับค่าเฉลี่ย"></svg></div>
+  </div>
+  <div class="legend"><span><span class="dot m"></span>ค่าของรุ่นนั้น</span><span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="var(--surface)" stroke="var(--ink-3)" stroke-width="2"/></svg>ค่าเฉลี่ยของรองเท้าประเภทเดียวกันที่แล็บเคยทดสอบ</span><span>▲ ดีกว่าค่าเฉลี่ย · ▼ แย่กว่าค่าเฉลี่ย</span></div>
+  <div class="tipbox"><b>เอาไปใช้ยังไง</b> ถ้าใส่ MtC วิ่งทางหินที่ปลายเท้าชอบเตะหิน ผ้าหัวจะขาดก่อนส่วนอื่น เลือก M1 ที่มียางกันชนหัว หรือ T1 ที่ผ้าเสริม aramid ส่วน Norda จะต้องเปลี่ยนเพราะดอกยางหมด ตอนนั้นผ้ายังดีอยู่ เอาไปใส่เดินหรือวิ่งถนนเบา ๆ ต่อได้</div>
+</section>
+
+<section class="wrap" id="fit">
+  <div class="kicker">08 · ทรงเท้าและไซซ์</div>
+  <h2>ซื้อไซซ์ไหนดี</h2>
+  <p class="lead">ข้อที่ต้องจำ: <b>Norda ต้องซื้อใหญ่กว่าไซซ์ปกติทุกรุ่น</b> 001, 001A และ 005 ใหญ่ขึ้นครึ่งไซซ์ 002 กับ 003 ใหญ่ขึ้นหนึ่งไซซ์ ส่วน <b>MtC ส่วนใหญ่ใส่ไซซ์ปกติ</b> ยกเว้น M1 ที่ไซซ์เล็ก ควรซื้อใหญ่ขึ้นครึ่งไซซ์ รองเท้าคู่ละหมื่นถ้าซื้อผิดไซซ์จะเสียดายมาก ควรลองที่ร้านก่อน</p>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card"><h3 style="color:var(--norda)">Norda</h3>
+      <div class="sizes" id="sizesN"></div>
+      <p class="muted" style="margin-top:10px">แบรนด์ใช้ทรงเดียวกันทั้งชายและหญิง หน้าเท้ากว้างให้นิ้วกางได้ กลางเท้าถึงส้นเรียวลง ผู้รีวิวบอกว่ากว้างกว่า La Sportiva แต่แคบกว่า Altra ไม่มีรุ่นหน้ากว้าง</p></div>
+    <div class="card"><h3 style="color:var(--mtc)">Mount to Coast</h3>
+      <div class="sizes" id="sizesM"></div>
+      <p class="muted" style="margin-top:10px">แบรนด์ขึ้นชื่อเรื่องหน้าเท้ากว้าง แต่ผลแล็บไม่ได้กว้างทุกรุ่น H1 หัวแคบกว่าค่าเฉลี่ยชัดเจน ส่วน R1 รีวิวไม่ตรงกัน บางเจ้าว่ากว้าง บางเจ้าว่าหัวเรียว</p></div>
+  </div>
+  <div class="card chart" style="margin-top:16px"><h3>MtC ความกว้างหัวรองเท้า (ผลแล็บ)</h3><p class="muted" style="margin-top:2px">วัดด้านในตรงนิ้วเท้า หน่วยเป็นมม. ยิ่งกว้างนิ้วยิ่งกางได้</p>
+    <svg id="labToeW" viewBox="0 0 680 150" role="img" aria-label="ความกว้างหัวรองเท้า เทียบกับค่าเฉลี่ย"></svg>
+    <p class="muted">Norda ไม่มีค่าแล็บ ใช้คำแนะนำไซซ์ของแบรนด์แทน</p></div>
+</section>
+
+<section class="wrap" id="climate">
+  <div class="kicker">09 · อากาศไทย</div>
+  <h2>วิ่งในอากาศร้อนชื้นแบบไทย</h2>
+  <p class="lead">รีวิวต่างประเทศส่วนใหญ่ทดสอบในอากาศแห้งหรือหนาว ฉันเลยคัดข้อมูลเรื่องระบายอากาศ แห้งเร็ว และกันน้ำ ออกมาแยกไว้ตรงนี้ <b>รุ่นที่ควรเลี่ยงในไทยคือ Norda รุ่น G+</b> เพราะทำมาให้กันน้ำ ใส่แล้วจะร้อน</p>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card"><h3 style="color:var(--norda)">Norda</h3><div class="clim" id="climN"></div></div>
+    <div class="card"><h3 style="color:var(--mtc)">Mount to Coast</h3><div class="clim" id="climM"></div></div>
+  </div>
+  <div class="tipbox"><b>ดูแลในอากาศชื้น</b> ถอดแผ่นรองเท้าออกตากแยก ล้างด้วยน้ำเย็นกับสบู่อ่อน ๆ ห้ามเข้าเครื่องซักผ้า ห้ามใช้น้ำร้อน และห้ามตากแดดจัดหรือวางใกล้ความร้อน (คำแนะนำจาก Norda ใช้กับรองเท้าวิ่งทั่วไปได้เหมือนกัน)</div>
+</section>
+
+<section class="wrap" id="stability">
+  <div class="kicker">10 · ความมั่นคงและการยึดเกาะ</div>
+  <h2>บนทางหินเอียง ใครมั่นคงกว่า</h2>
+  <p class="lead">การยึดเกาะ สองแบรนด์ใช้ยาง Vibram Megagrip เหมือนกันในรุ่นเทรล ที่ต่างกันจริงคือความมั่นคง พื้นยิ่งหนา เท้ายิ่งอยู่สูงจากพื้น เวลาเหยียบหินเอียง ข้อเท้าจะยิ่งพลิกง่าย</p>
+  <div class="card" style="margin-top:16px">
+    <svg id="slope" viewBox="0 0 680 268" role="img" aria-label="ภาพเทียบความสูงของเท้าบนพื้นเอียง ระหว่าง Norda 001A กับ MtC M1" style="width:100%;height:auto"></svg>
+    <p class="muted">ภาพวาดตามสเกลความหนาพื้นจริง บนพื้นเอียง 12° ความกว้างพื้นรองเท้าวาดไว้เท่ากันทั้งสองคู่</p>
+  </div>
+  <div class="grid2" style="margin-top:16px">
+    <div class="card" style="border-top:4px solid var(--norda)"><h3>Norda</h3><ul class="facts">
+      <li>พื้นบาง 21–30 มม. เท้าอยู่ใกล้พื้น ผู้รีวิวบอกว่า 001A <b>มั่นคงมากตอนลงทางเทคนิค</b></li>
+      <li>005 กับ 055 ใช้ยาง <b>Megagrip Elite</b> ซึ่ง Vibram บอกว่าเป็นสูตรที่เกาะที่สุดที่เคยทำ</li>
+      <li>055 พื้นหนาขึ้นเป็น 36 มม. เลยเพิ่มขอบหุ้มส้นกับแผ่นเสริม TPU มากกว่าทุกรุ่นก่อนหน้า เพื่อให้ยังมั่นคง</li></ul></div>
+    <div class="card" style="border-top:4px solid var(--mtc)"><h3>Mount to Coast</h3><ul class="facts">
+      <li>ผลแล็บ M1 ยึดเกาะได้ <b class="num">0.77</b> ค่าเฉลี่ยรองเท้าเทรลคือ 0.67 <b>ดีกว่าค่าเฉลี่ยชัดเจน</b></li>
+      <li>แต่ M1 พื้นสูง 38 มม. ผู้รีวิวบอกว่า <b>ไม่ใช่รุ่นที่มั่นคงที่สุดบนทางหินเอียง</b></li>
+      <li>H1 บิดตัวง่าย ได้ <span class="num">13.9</span> Nm (ค่าเฉลี่ย 15.7) และดอกยางลึกแค่ 1.9 มม. เหมาะทางกรวด ไม่เหมาะโคลน</li></ul></div>
+  </div>
+</section>
+
+<section class="wrap" id="h2h">
+  <div class="kicker">11 · ตัวต่อตัว</div>
+  <h2>Norda 055 vs MtC M1</h2>
+  <p class="lead">รองเท้าภูเขาพื้นหนาสำหรับวิ่งอัลตร้าของทั้งสองแบรนด์ ออกห่างกันแค่เดือนเดียว พื้นหนาพอ ๆ กันที่ราว 38 มม. <b>055 เกาะพื้นกว่า มั่นคงกว่า และผ้าทนกว่า</b> ส่วน <b>M1 เบากว่า ระบายอากาศดีกว่ามาก และถูกกว่า $130</b></p>
+
+  <div class="grid2" style="margin-top:16px">
+    <div class="card hero-shoe"><svg id="h2hN" viewBox="0 0 320 140" role="img"></svg>
+      <div class="cap"><b style="color:var(--norda)">Norda 055 · $325</b><span class="muted num">36/30 มม. · drop 6 · ดอกยาง 4.5–5 มม.</span></div></div>
+    <div class="card hero-shoe"><svg id="h2hM" viewBox="0 0 320 140" role="img"></svg>
+      <div class="cap"><b style="color:var(--mtc)">MtC M1 · $195</b><span class="muted num">38/34 มม. · drop 4 · ดอกยาง 4 มม.</span></div></div>
+  </div>
+  <p class="muted">ภาพวาดตามสเปกที่แบรนด์ประกาศ แต่ค่าที่วัดจริงเข้าใกล้กันกว่านี้ ผู้รีวิววัด 055 ได้ 38/31 และแล็บวัด M1 ได้ 38.8/32.0 drop จริงของทั้งคู่เลยอยู่ราว 7 มม. ส่วนน้ำหนักที่ไซซ์ US M11–11.5 คือ 055 หนัก 330–336 ก. และ M1 หนัก 303 ก.</p>
+
+  <div class="card chart" style="margin-top:16px">
+    <h3>เทียบ 8 ด้าน</h3>
+    <p class="muted" style="margin-top:2px">จุดยิ่งเอนไปทางไหน ฝั่งนั้นยิ่งได้เปรียบ แถบยาวหมายถึงชนะขาด แถบสั้นหมายถึงชนะนิดเดียว ชี้ที่แถวเพื่อดูหลักฐาน</p>
+    <div class="scrollx"><svg id="tug" viewBox="0 0 720 420" role="img" aria-label="เทียบ 8 ด้านระหว่าง Norda 055 กับ MtC M1"></svg></div>
+    <p class="muted"><b>นับแต้มไม่ได้ช่วยตัดสิน</b> M1 ชนะ 4 ด้าน 055 ชนะ 3 ด้าน และเสมอ 1 ด้าน แต่ด้านที่ 055 ชนะ คือยึดเกาะ มั่นคง และผ้าทน เป็นด้านที่สำคัญที่สุดถ้าวิ่งบนหิน ส่วนด้านที่ M1 ชนะ สำคัญกว่าถ้าวิ่งทางที่วิ่งได้ต่อเนื่องและอากาศร้อน</p>
+  </div>
+
+  <h3 style="margin:28px 0 8px">สองรุ่นพังคนละจุด</h3>
+  <p class="lead" style="margin-top:0">055 ผ้าทนแต่ดอกยางด้านหน้าสึกเร็ว M1 กลับกัน พื้นยางทนแต่ผ้าหัวรองเท้าบาง ถ้ารู้ว่าตัวเองชอบทำรองเท้าพังตรงไหน จะเลือกได้ง่ายขึ้น</p>
+  <div class="grid2">
+    <div class="card"><svg id="wearN" viewBox="0 0 320 140" role="img" aria-label="จุดสึกของ Norda 055"></svg><div class="wear-list" id="wearListN"></div></div>
+    <div class="card"><svg id="wearM" viewBox="0 0 320 140" role="img" aria-label="จุดสึกของ MtC M1"></svg><div class="wear-list" id="wearListM"></div></div>
+  </div>
+
+  <h3 style="margin:28px 0 8px">นายวิ่งแบบไหน</h3>
+  <div class="card">
+    <div class="opts" id="scen">
+      <button type="button" data-s="rock">ภูเขาไทย หิน ราก ลาดชันเยอะ</button>
+      <button type="button" data-s="run">อัลตร้าบนทางดิน/กรวดที่วิ่งได้ อากาศร้อน</button>
+      <button type="button" data-s="budget">งบจำกัด ใช้ซ้อมด้วย</button>
+      <button type="button" data-s="ankle">ข้อเท้าพลิกง่าย</button>
+    </div>
+    <div class="result" id="scenOut" aria-live="polite"><span class="muted">เลือกแบบที่ใกล้กับนายที่สุด</span></div>
+  </div>
+
+  <div class="tipbox"><b>ข้อควรรู้</b> 055 ไม่มีผลแล็บ ข้อมูลฝั่ง 055 มาจากรีวิวทั้งหมด ส่วน M1 มีผลแล็บ RunRepeat ด้วย ตัวเลขสเปกของ 055 แต่ละเว็บวัดไม่ตรงกัน และมีเว็บหนึ่งบอกว่าหนัก 240 ก. ซึ่งน่าจะผิด ยังหาราคาไทยของทั้งสองรุ่นไม่เจอ แต่ Norda 005 ที่ราคา $325 เท่ากันขายในไทย ฿10,950 ดังนั้น 055 น่าจะอยู่แถวนั้น สองรุ่นนี้ไซซ์เล็กทั้งคู่ ควรซื้อใหญ่ขึ้นครึ่งไซซ์ และลองที่ร้านก่อน</div>
+</section>
+
+<section class="wrap" id="price">
+  <div class="kicker">12 · ราคา</div>
+  <h2>ราคาป้าย และต้นทุนต่อกิโลเมตร</h2>
+  <p class="lead">ราคาป้ายสหรัฐฯ (USD) ณ ปี 2026 รุ่นที่ถูกที่สุดของ Norda ยังแพงกว่ารุ่นที่แพงที่สุดของ Mount to Coast อยู่ $100</p>
+  <div class="card chart" style="margin-top:16px">
+    <div class="legend"><span><span class="dot n"></span>Norda</span><span><span class="dot m"></span>Mount to Coast</span></div>
+    <div class="scrollx"><svg id="bars" viewBox="0 0 720 420" role="img" aria-label="กราฟแท่งราคา USD ของ 12 รุ่น"></svg></div>
+  </div>
+
+  <h3 style="margin:28px 0 6px">ลองคำนวณ: ต้นทุนต่อกิโลเมตร</h3>
+  <p class="lead" style="margin-top:0">ตัวเลขที่ต้องเดาคือรองเท้าใช้ได้กี่กิโล กดเลือกแหล่งตัวเลขด้านล่าง หรือเลื่อนปรับเองก็ได้ ค่าเริ่มต้นใช้ตัวเลขจากรีวิวใส่จริง Norda 001 ใช้ได้ 880 กม. ส่วน MtC R1 ใช้ได้ 560 กม.</p>
+  <div class="seg" role="group" aria-label="แหล่งตัวเลขอายุใช้งาน" style="margin-bottom:12px"><button type="button" data-p="rev" aria-pressed="true">ตามรีวิวใส่จริง</button><button type="button" data-p="claim" aria-pressed="false">ตามที่แบรนด์บอก</button><button type="button" data-p="eq" aria-pressed="false">ให้เท่ากันที่ 1,000 กม.</button></div>
+  <div class="calc">
+    <div class="side n">
+      <label class="muted">รุ่น Norda <select id="cN"></select></label>
+      <div class="row"><label for="lifeN"><span>ใช้ได้กี่กิโล</span><span class="num" id="lifeNv"></span></label><input type="range" id="lifeN" min="300" max="2000" step="10" value="880"></div>
+      <div class="muted">ต้นทุนต่อกิโลเมตร</div><output class="num" id="cpkN"></output>
+      <div class="muted num" id="monN"></div>
+    </div>
+    <div class="side m">
+      <label class="muted">รุ่น Mount to Coast <select id="cM"></select></label>
+      <div class="row"><label for="lifeM"><span>ใช้ได้กี่กิโล</span><span class="num" id="lifeMv"></span></label><input type="range" id="lifeM" min="300" max="2000" step="10" value="560"></div>
+      <div class="muted">ต้นทุนต่อกิโลเมตร</div><output class="num" id="cpkM"></output>
+      <div class="muted num" id="monM"></div>
+    </div>
+  </div>
+  <div class="ctrl-row"><label for="kmw">นายวิ่งสัปดาห์ละ <input type="range" id="kmw" min="10" max="120" step="5" value="40" style="width:180px"> <b class="num" id="kmwv"></b></label></div>
+  <div class="breakeven" id="breakeven"></div>
+  <p class="muted">ราคาเป็นบาท ใช้ราคาป้ายร้านไทยถ้ามี (Norda 001A ฿9,950 · 005 ฿10,950 · MtC R1 ฿5,750) รุ่นที่ไม่มีราคาไทย คิดจาก USD × 34 บาท ซึ่งเป็นค่าประมาณ</p>
+</section>
+
+<section class="wrap" id="quiz">
+  <div class="kicker">13 · ให้ฉันเลือกให้</div>
+  <h2>ตอบ 3 ข้อ แล้วดูว่ารุ่นไหนเหมาะ</h2>
+  <div class="card" style="margin-top:16px">
+    <div class="q" data-q="terrain"><div>1. วิ่งพื้นแบบไหนเป็นส่วนใหญ่</div><div class="opts">
+      <button type="button" data-v="road">ถนน / ลู่</button>
+      <button type="button" data-v="mixed">ถนนสลับทางดิน ทางกรวด</button>
+      <button type="button" data-v="trail">เทรลทั่วไป ทางเดินป่า</button>
+      <button type="button" data-v="tech">ภูเขาเทคนิค หิน ราก ลาดชัน</button></div></div>
+    <div class="q" data-q="use"><div>2. ใช้ทำอะไร</div><div class="opts">
+      <button type="button" data-v="daily">ซ้อมทุกวัน</button>
+      <button type="button" data-v="race">แข่ง ต้องการความเร็ว</button>
+      <button type="button" data-v="ultra">อัลตร้า วิ่งเกิน 5 ชม.</button></div></div>
+    <div class="q" data-q="budget"><div>3. งบต่อคู่</div><div class="opts">
+      <button type="button" data-v="low">ไม่เกิน ~6,500 บาท</button>
+      <button type="button" data-v="mid">ไม่เกิน ~8,000 บาท</button>
+      <button type="button" data-v="high">ถึงหมื่นกว่าบาทก็ได้</button></div></div>
+    <div class="result" id="result" aria-live="polite"><span class="muted">ตอบครบทั้ง 3 ข้อแล้วผลจะขึ้นตรงนี้</span></div>
+  </div>
+</section>
+
+<section class="wrap" id="specs">
+  <div class="kicker">14 · ตารางสเปก</div>
+  <h2>สเปกเต็มทั้ง 12 รุ่น</h2>
+  <p class="lead">ตารางนี้ใช้ข้อมูลชุดเดียวกับกราฟข้างบน เลื่อนซ้ายขวาได้ถ้าจอแคบ</p>
+  <div class="tbl-wrap" style="margin-top:16px"><table id="specTable">
+    <thead><tr><th>รุ่น</th><th>ใช้ทำอะไร</th><th class="r">พื้นส้น/ปลาย (มม.)</th><th class="r">drop</th><th class="r">น้ำหนัก</th><th class="r">ดอกยาง</th><th>โฟม</th><th>พื้นล่าง</th><th class="r">USD</th><th class="r">ไทย</th></tr></thead>
+    <tbody></tbody></table></div>
+</section>
+
+<section class="wrap" id="thai">
+  <div class="kicker">15 · ซื้อในไทย</div>
+  <h2>ซื้อที่ไหน และต้องระวังอะไร</h2>
+  <div class="shops" style="margin-top:16px">
+    <div class="card" style="border-top:4px solid var(--norda)"><h3>Norda</h3>
+      <p class="num">ราคาป้ายส่วนใหญ่ <b>฿9,950</b> · 005 อยู่ที่ <b>฿10,950</b> · รองเท้าแตะ 008 อยู่ที่ ฿4,950 · มีช่วงลดราคา 001A บางสีเหลือ ฿7,960</p>
+      <ul><li>Banana Run</li><li>Run2Paradise</li><li>SEEK Thailand</li></ul></div>
+    <div class="card" style="border-top:4px solid var(--mtc)"><h3>Mount to Coast</h3>
+      <p class="num">R1 ราคาป้าย <b>฿5,750</b> ทุกร้านที่ฉันเจอ รุ่นอื่นยังไม่เจอราคาที่ยืนยันได้</p>
+      <ul><li>ZICO.BKK (Central ลาดพร้าว ชั้น G)</li><li>Banana Run</li><li>The Highlandner · SEEK</li></ul></div>
+  </div>
+  <div class="warn"><b>⚠ ตรวจสอบก่อนซื้อ ถ้าเจอราคาถูกผิดปกติ</b><br>
+    ตอนหาข้อมูล ฉันเจอเว็บหนึ่ง (nordathailand.com) ตั้งราคา Norda 001A ราว ฿3,252 ซึ่งต่ำกว่าร้านอื่นประมาณ 3 เท่า ฉันยืนยันไม่ได้ว่าเว็บนี้เป็นตัวแทนจำหน่ายที่ได้รับอนุญาต ควรตรวจสอบก่อนซื้อ ถ้าไม่แน่ใจ ซื้อจากร้านในรายชื่อด้านบน หรือจาก nordarun.com โดยตรง</div>
+</section>
+
+<section class="wrap" id="sources">
+  <div class="kicker">แหล่งข้อมูล</div>
+  <h2>ตัวเลขแต่ละตัวมาจากไหน</h2>
+  <ul class="src" style="margin-top:16px">
+    <li><a href="https://www.irunfar.com/norda-001a-review">iRunFar · Norda 001A</a></li>
+    <li><a href="https://believeintherun.com/shoe-reviews/norda-001a-review/">Believe in the Run · Norda 001A</a></li>
+    <li><a href="https://bettertrail.com/outdoor-gear/norda-001a-trail-running-shoe-review">BetterTrail · Norda 001A</a></li>
+    <li><a href="https://www.roadtrailrun.com/2023/06/norda-002-multi-tester-review-9.html">RoadTrailRun · Norda 002</a></li>
+    <li><a href="https://nordarun.com/products/003-m-pitch-black">nordarun.com · 003</a></li>
+    <li><a href="https://believeintherun.com/shoe-reviews/norda-005-review/">Believe in the Run · Norda 005</a></li>
+    <li><a href="https://gearjunkie.com/footwear/norda-005-review">GearJunkie · Norda 005</a></li>
+    <li><a href="https://ultrarunning.com/featured/review-norda-055-trail-shoe/">UltraRunning · Norda 055</a></li>
+    <li><a href="https://fieldmag.com/articles/norda-055-review">Field Mag · Norda 055</a></li>
+    <li><a href="https://www.sneakerfreaker.com/performance/features/norda-running-interview">Sneaker Freaker · สัมภาษณ์ Norda</a></li>
+    <li><a href="https://www.garagegrowngear.com/blogs/brand-bios/norda-ultralight-trail-running-shoes-designed-for-long-distances">Garage Grown Gear · ประวัติ Norda</a></li>
+    <li><a href="https://www.roadtrailrun.com/2024/05/mount-to-coast-r1-review-road.html">RoadTrailRun · MtC R1</a></li>
+    <li><a href="https://believeintherun.com/shoe-reviews/mount-to-coast-r1-review/">Believe in the Run · MtC R1</a></li>
+    <li><a href="https://www.doctorsofrunning.com/mount-to-coast-p1-review-2024/">Doctors of Running · MtC P1</a></li>
+    <li><a href="https://www.irunfar.com/mount-to-coast-h1-review">iRunFar · MtC H1</a></li>
+    <li><a href="https://runrepeat.com/mount-to-coast-h-1">RunRepeat · MtC H1</a></li>
+    <li><a href="https://www.doctorsofrunning.com/2026/03/mount-to-coast-c1-review-2026.html">Doctors of Running · MtC C1</a></li>
+    <li><a href="https://www.irunfar.com/mount-to-coast-c1-review">iRunFar · MtC C1</a></li>
+    <li><a href="https://www.cleverhiker.com/footwear/mount-to-coast-t1-trail-running-shoe-review/">CleverHiker · MtC T1</a></li>
+    <li><a href="https://www.irunfar.com/mount-to-coast-m1-review">iRunFar · MtC M1</a></li>
+    <li><a href="https://www.trailrunnermag.com/gear/shoes/mount-to-coast-m1-review-great-for-miles-not-mountains/">Trail Runner · MtC M1</a></li>
+    <li><a href="https://www.soleretriever.com/news/articles/mount-to-coast-hong-kong-ultra-running-interview">Sole Retriever · สัมภาษณ์ MtC</a></li>
+    <li><a href="https://marnionthemove.com/371-yeti-zhang-mount-to-coast-co-founder-head-of-product-talks-ultra-running-shoes-innovation-functionality/">Marni on the Move · Yeti Zhang</a></li>
+    <li><a href="https://bananarun.com/brand/norda.html">Banana Run · ราคา Norda ไทย</a></li>
+    <li><a href="https://www.treelinereview.com/gearreviews/norda-000-trail-running-shoes-review">Treeline Review · Norda 000</a></li>
+    <li><a href="https://believeintherun.com/shoe-reviews/norda-000-review/">Believe in the Run · Norda 000</a></li>
+    <li><a href="https://believeintherun.com/shoe-reviews/mount-to-coast-m1-review/">Believe in the Run · MtC M1</a></li>
+    <li><a href="https://believeintherun.com/shoe-reviews/norda-055-review/">Believe in the Run · Norda 055</a></li>
+    <li><a href="https://bettertrail.com/outdoor-gear/norda-055-trail-running-shoe-review">BetterTrail · Norda 055</a></li>
+    <li><a href="https://runmorph.com/en/reviews/norda-055-review">RunMorph · Norda 055</a></li>
+    <li><a href="https://www.roadtrailrun.com/2026/08/black-diamond-x-norda-collection-review.html">RoadTrailRun · BD x Norda 000</a></li>
+    <li><a href="https://nordarun.com/pages/faq">nordarun.com · FAQ (อายุใช้งาน ไซซ์ การดูแล)</a></li>
+    <li><a href="https://weartesters.com/norda-001-performance-review/">WearTesters · Norda 001</a></li>
+    <li><a href="https://adventureworthy.com/reviews/norda-001-review-the-dyneema-trail-shoe-that-gets-better-with-time">Adventure Worthy · Norda 001 (300+ ไมล์)</a></li>
+    <li><a href="https://www.halfwayanywhere.com/gear/review/norda-001a-trail-runner-review-post-thru-hike-impressions/">Halfway Anywhere · Norda 001A</a></li>
+    <li><a href="https://blacksheepadventuresports.com/norda-002-review/">Black Sheep · Norda 002</a></li>
+    <li><a href="https://runrepeat.com/mount-to-coast-m-1">RunRepeat แล็บ · MtC M1</a></li>
+    <li><a href="https://runrepeat.com/mount-to-coast-c-1">RunRepeat แล็บ · MtC C1</a></li>
+    <li><a href="https://www.weeviews.com/reviews/3981/mount-to-coast-r1">Weeviews · MtC R1</a></li>
+    <li><a href="https://weartesters.com/mount-to-coast-r1-performance-review/">WearTesters · MtC R1</a></li>
+    <li><a href="https://www.doctorsofrunning.com/2024/05/mount-to-coast-r1-review-2024.html">Doctors of Running · MtC R1</a></li>
+    <li><a href="https://www.roadtrailrun.com/2025/07/mount-to-coast-t1-multi-tester-review-3.html">RoadTrailRun · MtC T1</a></li>
+    <li><a href="https://wellworthy.com/mount-to-coast-review/">Wellworthy · MtC (เคลม 1,000 ไมล์)</a></li>
+    <li><a href="https://zicobkk.com/blogs/news/mount-to-coast-r1-road-race-long-run-ultra">ZICO.BKK · ราคา R1 ไทย</a></li>
+  </ul>
+</section>
+</main>
+
+<footer class="wrap">ทำเมื่อ ต.ค. 2026 · ราคาและรุ่นเปลี่ยนได้ ควรเช็กกับร้านอีกครั้งก่อนซื้อ · ตัวเลขทั้งหมดมาจากแบรนด์หรือผู้รีวิวตามรายการด้านบน ฉันไม่ได้วัดเอง</footer>
+
+<div id="tip" role="tooltip"></div>
+
+<script>
+(function(){
+"use strict";
+var NS="http://www.w3.org/2000/svg";
+var USD_THB=34;
+
+/* ---------- data ---------- */
+var shoes=[
+ {id:"001A",b:"n",role:"เทรลทุกแบบ ตัวหลักของแบรนด์",heel:26,fore:21,drop:5,w:268,ws:"US M8.5",lug:5,foam:"Arnitel TPEE",sole:"Vibram Litebase + Megagrip",usd:295,thb:9950,t:[1.3,4]},
+ {id:"000",b:"n",role:"ภูเขา ปีนป่าย วิ่งไกล (BD x Norda, ส.ค. 2026)",heel:26,fore:21,drop:5,w:294,ws:"US M8.5",lug:5,foam:"Vibram Stream Flow",sole:"Vibram Litebase + Megagrip",usd:295,thb:null,t:[1.5,4]},
+ {id:"002",b:"n",role:"เทรลเทคนิค พื้นบาง รู้สึกพื้นชัด",heel:24,fore:20,drop:4,w:249,ws:"US M8.5",lug:5,foam:"Vibram SLE (EVA)",sole:"Vibram Litebase + Megagrip",usd:295,thb:null,t:[2,4]},
+ {id:"003",b:"n",role:"เดินป่า ปีนหิน วิ่งได้ (approach)",heel:26,fore:21,drop:5,w:275,ws:"US M8.5",lug:5,foam:"Vibram SLE (EVA)",sole:"Vibram Litebase + Megagrip",usd:295,thb:null,t:[2.4,4]},
+ {id:"005",b:"n",role:"แข่งเทรล เบาที่สุด",heel:28.5,fore:21.5,drop:7,w:214,ws:"US M8.5",lug:4,foam:"Arnitel TPEE",sole:"Vibram Megagrip Elite",usd:325,thb:10950,t:[1.5,4]},
+ {id:"055",b:"n",role:"เทรลไกล พื้นหนา (ออก ก.ค. 2026)",heel:36,fore:30,drop:6,w:286,ws:"US M8.5",lug:5,foam:"Arnitel TPEE",sole:"Vibram Megagrip Elite",usd:325,thb:null,t:[1.6,4]},
+ {id:"R1",b:"m",role:"แข่งถนนระยะอัลตร้า",heel:35,fore:27,drop:8,w:241,ws:"US M9",lug:null,foam:"LightCELL + ZeroSag",sole:"CPU (เบา ทนสึก)",usd:160,thb:5750,t:[0,1]},
+ {id:"P1",b:"m",role:"ซ้อมถนน ประคองหน้าเท้า",heel:37,fore:27,drop:10,w:280,ws:"US M9",lug:null,foam:"LightCELL + 3D Archrail",sole:"ยางเต็มพื้น",usd:160,thb:null,t:[0,1]},
+ {id:"C1",b:"m",role:"ซ้อมยาวบนถนน พื้นหนามาก (2026)",heel:42,fore:36,drop:6,w:272,ws:"ผู้รีวิววัด",lug:null,foam:"CircleCELL + EVA",sole:"ยาง",usd:180,thb:null,t:[0,1.1]},
+ {id:"H1",b:"m",role:"ถนนสลับทางดิน/กรวด",heel:35,fore:29,drop:6,w:242,ws:"US M9",lug:null,foam:"CircleCELL",sole:"Versagrip",usd:160,thb:null,t:[0,2.3]},
+ {id:"T1",b:"m",role:"เทรลทั่วไป",heel:36,fore:32,drop:4,w:255,ws:"US M9",lug:4,foam:"LightCELL",sole:"Vibram Megagrip + Litebase",usd:180,thb:null,t:[1,3.3]},
+ {id:"M1",b:"m",role:"เทรลภูเขาระยะอัลตร้า (2026)",heel:38,fore:34,drop:4,w:280,ws:"US M9",lug:4,foam:"JetCELL (TPU)",sole:"Vibram Megagrip",usd:195,thb:null,t:[0.6,3.4]}
+];
+var byId={};shoes.forEach(function(s){byId[s.id]=s;});
+var brandName={n:"Norda",m:"Mount to Coast"};
+function col(b){return b==="n"?"var(--norda)":(b==="m"?"var(--mtc)":"var(--ink-3)");}
+function thb(s){return s.thb||Math.round(s.usd*USD_THB/10)*10;}
+function fmt(n){return n.toLocaleString("en-US");}
+function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+function clear(n){while(n.firstChild)n.removeChild(n.firstChild);}
+
+/* ---------- theme toggle ---------- */
+var root=document.documentElement;
+try{var saved=localStorage.getItem("nvm-theme");if(saved)root.setAttribute("data-theme",saved);}catch(e){}
+document.getElementById("themeBtn").addEventListener("click",function(){
+  var cur=root.getAttribute("data-theme");
+  if(!cur){cur=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}
+  var next=cur==="dark"?"light":"dark";root.setAttribute("data-theme",next);
+  try{localStorage.setItem("nvm-theme",next);}catch(e){}
+});
+
+/* ---------- shoe side-view (mm scale) ---------- */
+function drawShoe(svg,s){
+  clear(svg);
+  var G=134,lug=s.lug||1.2,B=G-lug,Hh=B-s.heel,Hf=B-s.fore;
+  function mt(x){return Hh+(Hf-Hh)*(x-60)/234;}
+  var c=col(s.b);
+  el("line",{x1:0,y1:G+.5,x2:320,y2:G+.5,stroke:"var(--line)","stroke-width":1},svg);
+  // upper
+  var up="M12 "+(Hh+4)+" C6 "+(Hh-30)+" 16 "+(Hh-62)+" 34 "+(Hh-66)+" C50 "+(Hh-60)+" 62 "+(Hh-50)+" 84 "+(Hh-52)+
+    " L116 "+(mt(116)-70)+" C150 "+(mt(150)-52)+" 220 "+(Hf-40)+" 268 "+(Hf-28)+" C298 "+(Hf-22)+" 312 "+(Hf-8)+" 300 "+(Hf+1)+" L60 "+Hh+" Q20 "+Hh+" 12 "+(Hh+4)+"Z";
+  el("path",{d:up,fill:"var(--surface-2)",stroke:c,"stroke-width":1.6,"stroke-linejoin":"round"},svg);
+  // laces
+  for(var i=0;i<6;i++){var x=112+i*22,y=mt(x)-64+i*7.5;el("line",{x1:x-7,y1:y,x2:x+9,y2:y+5,stroke:c,"stroke-width":2,"stroke-linecap":"round",opacity:.75},svg);}
+  // midsole
+  var mid="M14 "+B+" L262 "+B+" Q292 "+B+" 306 "+(B-12)+" Q308 "+(Hf+2)+" 296 "+Hf+" L60 "+Hh+" Q14 "+Hh+" 10 "+(Hh+8)+" Q8 "+B+" 14 "+B+"Z";
+  el("path",{d:mid,fill:c,stroke:"var(--surface)","stroke-width":1},svg);
+  // outsole band
+  el("path",{d:"M14 "+B+" L262 "+B+" Q292 "+B+" 306 "+(B-12)+" L304 "+(B-15)+" Q290 "+(B-3)+" 262 "+(B-3)+" L14 "+(B-3)+"Z",fill:"var(--sole)"},svg);
+  // lugs
+  if(s.lug){for(var lx=18;lx<262;lx+=13){el("rect",{x:lx,y:B-.5,width:7,height:lug+.5,rx:1.5,fill:"var(--sole)"},svg);}}
+  // stack dimension marks
+  [[24,Hh,s.heel],[250,mt(250),s.fore]].forEach(function(d){
+    el("line",{x1:d[0],y1:B-1,x2:d[0],y2:d[1]+1,stroke:"var(--surface)","stroke-width":1.2,"stroke-dasharray":"2 2"},svg);
+  });
+  svg.setAttribute("aria-label",brandName[s.b]+" "+s.id+" ความหนาพื้น "+s.heel+"/"+s.fore+" มม.");
+}
+
+/* anatomy mini icons */
+document.querySelectorAll("svg[data-hl]").forEach(function(svg){
+  var hl=svg.getAttribute("data-hl"),on="var(--ink)",off="var(--line)";
+  el("path",{d:"M6 30 C4 16 10 6 20 6 C28 9 34 11 44 12 L62 16 C80 22 98 24 104 32 Z",fill:hl==="upper"?on:off},svg);
+  el("path",{d:"M6 30 L104 32 Q106 38 100 40 L8 40 Q4 38 6 30Z",fill:hl==="mid"?on:off},svg);
+  el("path",{d:"M8 40 L100 40 Q104 44 98 45 L8 45Z",fill:hl==="out"?on:off},svg);
+  for(var i=0;i<4;i++)el("line",{x1:44+i*9,y1:13+i*2,x2:51+i*9,y2:17+i*2,stroke:hl==="lace"?on:"var(--surface)","stroke-width":2.4,"stroke-linecap":"round"},svg);
+});
+
+/* ---------- tooltip ---------- */
+var tip=document.getElementById("tip");
+function showTip(html,ev){tip.innerHTML=html;tip.style.opacity=1;moveTip(ev);}
+function moveTip(ev){var x=ev.clientX+14,y=ev.clientY+14,r=tip.getBoundingClientRect();
+  if(x+r.width>innerWidth-8)x=ev.clientX-r.width-14; if(y+r.height>innerHeight-8)y=ev.clientY-r.height-14;
+  tip.style.left=x+"px";tip.style.top=y+"px";}
+function hideTip(){tip.style.opacity=0;}
+function shoeTip(s){return "<b style='color:"+col(s.b)+"'>"+brandName[s.b]+" "+s.id+"</b><br>"+s.role+
+  "<br><span class='num'>พื้น "+s.heel+"/"+s.fore+" มม. · drop "+s.drop+" · "+s.w+" ก. ("+s.ws+")<br>$"+s.usd+(s.thb?" · ฿"+fmt(s.thb):"")+"</span>";}
+function bindTip(node,s){
+  node.addEventListener("pointerenter",function(e){showTip(shoeTip(s),e);});
+  node.addEventListener("pointermove",moveTip);
+  node.addEventListener("pointerleave",hideTip);
+  node.setAttribute("tabindex","0");
+  node.addEventListener("focus",function(){var r=node.getBoundingClientRect();showTip(shoeTip(s),{clientX:r.right,clientY:r.bottom});});
+  node.addEventListener("blur",hideTip);
+}
+
+/* glossary popovers */
+var pop=null;
+function openPop(t){closePop();pop=document.createElement("div");pop.className="pop";pop.textContent=t.getAttribute("data-def");document.body.appendChild(pop);
+  var r=t.getBoundingClientRect(),pw=pop.offsetWidth,x=Math.min(Math.max(8,r.left+scrollX),scrollX+innerWidth-pw-8);
+  pop.style.left=x+"px";pop.style.top=(r.bottom+scrollY+8)+"px";}
+function closePop(){if(pop){pop.remove();pop=null;}}
+document.querySelectorAll(".term").forEach(function(t){
+  t.addEventListener("mouseenter",function(){openPop(t);});t.addEventListener("mouseleave",closePop);
+  t.addEventListener("focus",function(){openPop(t);});t.addEventListener("blur",closePop);
+  t.addEventListener("click",function(e){e.stopPropagation();openPop(t);});
+});
+document.addEventListener("click",closePop);
+
+/* ---------- lacing diagram ---------- */
+var laceSvg=document.getElementById("laceSvg");
+var laceCopy=[
+ ["ชั่วโมงแรก: กระชับทั้งคู่","ตอนเริ่มวิ่ง เท้ายังไม่บวม เชือกทั้งสองโซนกระชับพอดี ช่วงนี้ทั้งสองแบรนด์ใส่สบายพอกัน"],
+ ["ชั่วโมงที่ 10: หน้าเท้าเริ่มบีบ","เท้าบวมขึ้น ส่วนใหญ่ที่หน้าเท้า (เส้นประคือขนาดเท้าตอนนี้) นิ้วเริ่มถูกบีบ ถ้าเป็นเชือกเส้นเดียวแบบ Norda ต้องหยุด แก้เชือก แล้วผูกใหม่ทั้งเส้น"],
+ ["คลายเชือกหน้าเท้า ใช้เวลาไม่กี่วินาที","กดตัวล็อกแล้วดึงเชือกรูดให้คลาย หน้าเท้ามีที่มากขึ้น ส่วนเชือกช่วงบนที่ล็อกข้อเท้ายังกระชับเหมือนเดิม ส้นเท้าไม่หลวม นี่คือเหตุผลที่ MtC ออกแบบระบบนี้สำหรับวิ่งอัลตร้า"]
+];
+function drawLace(st){
+  clear(laceSvg);
+  var swell=st>=1?1:0, open=st===2?1:0;
+  // shoe outline (top view, toe at left)
+  var w=swell?8:0;
+  var shoe="M40 150 C40 "+(92-w)+" 90 "+(70-w)+" 150 "+(72-w)+" L330 92 C372 96 392 120 392 150 C392 180 372 204 330 208 L150 "+(228+w)+" C90 "+(230+w)+" 40 "+(208+w)+" 40 150Z";
+  el("path",{d:shoe,fill:"var(--surface-2)",stroke:"var(--ink-3)","stroke-width":2},laceSvg);
+  // foot outline (swollen)
+  if(swell){el("path",{d:"M52 150 C52 "+(84)+" 96 "+(62)+" 150 "+(64)+" L320 98 C358 102 378 124 378 150 C378 176 358 198 320 202 L150 236 C96 238 52 216 52 150Z",fill:"none",stroke:"var(--norda)","stroke-width":2,"stroke-dasharray":"6 5"},laceSvg);}
+  // zone labels
+  el("text",{x:150,y:40,"text-anchor":"middle","font-size":14,fill:"var(--ink-2)"},laceSvg).textContent="โซนหน้าเท้า";
+  el("text",{x:290,y:40,"text-anchor":"middle","font-size":14,fill:"var(--ink-2)"},laceSvg).textContent="โซนบน";
+  el("line",{x1:225,y1:52,x2:225,y2:248,stroke:"var(--line)","stroke-width":1.5,"stroke-dasharray":"4 4"},laceSvg);
+  // forefoot cinch lace
+  var gap=open?36:(swell?16:22); var pts=[];
+  for(var i=0;i<5;i++){var x=110+i*24;pts.push([x,150-gap],[x+12,150+gap]);}
+  var p="M"+pts.map(function(q){return q.join(" ");}).join(" L");
+  el("path",{d:p,fill:"none",stroke:"var(--mtc)","stroke-width":3.5,"stroke-linejoin":"round","stroke-linecap":"round"},laceSvg);
+  for(var j=0;j<5;j++){[150-gap,150+gap].forEach(function(y){el("circle",{cx:110+j*24+(y>150?12:0),cy:y,r:4,fill:"var(--surface)",stroke:"var(--mtc)","stroke-width":2},laceSvg);});}
+  // toggle
+  var tx=open?222:214;
+  el("rect",{x:tx-10,y:140,width:20,height:20,rx:5,fill:"var(--mtc)"},laceSvg);
+  el("line",{x1:tx-4,y1:150,x2:tx+4,y2:150,stroke:"var(--surface)","stroke-width":2.5,"stroke-linecap":"round"},laceSvg);
+  // upper standard laces
+  for(var k=0;k<4;k++){var ux=246+k*22;
+    el("line",{x1:ux,y1:130,x2:ux+14,y2:170,stroke:"var(--ink-3)","stroke-width":3.5,"stroke-linecap":"round"},laceSvg);
+    el("line",{x1:ux,y1:170,x2:ux+14,y2:130,stroke:"var(--ink-3)","stroke-width":3.5,"stroke-linecap":"round"},laceSvg);}
+  el("path",{d:"M340 150 c10 -22 30 -18 22 0 c8 18 -12 22 -22 0Z",fill:"none",stroke:"var(--ink-3)","stroke-width":3},laceSvg);
+  // pressure indicator
+  if(st===1){el("text",{x:96,y:274,"text-anchor":"middle","font-size":14,fill:"var(--norda)"},laceSvg).textContent="▲ นิ้วถูกบีบ";}
+  if(st===2){el("text",{x:150,y:274,"text-anchor":"middle","font-size":14,fill:"var(--mtc)"},laceSvg).textContent="หน้าเท้ามีที่เพิ่ม";
+             el("text",{x:290,y:274,"text-anchor":"middle","font-size":14,fill:"var(--ink-2)"},laceSvg).textContent="ข้อเท้ายังกระชับ";}
+  document.getElementById("laceTitle").textContent=laceCopy[st][0];
+  document.getElementById("laceText").textContent=laceCopy[st][1];
+}
+document.querySelectorAll("[data-lace]").forEach(function(b){
+  b.addEventListener("click",function(){
+    document.querySelectorAll("[data-lace]").forEach(function(o){o.setAttribute("aria-pressed",o===b?"true":"false");});
+    drawLace(+b.getAttribute("data-lace"));
+  });
+});
+drawLace(0);
+
+/* ---------- stack compare ---------- */
+function fillSel(sel,b,def){shoes.filter(function(s){return s.b===b;}).forEach(function(s){var o=document.createElement("option");o.value=s.id;o.textContent=s.id+" · "+s.role;if(s.id===def)o.selected=true;sel.appendChild(o);});}
+var selN=document.getElementById("selN"),selM=document.getElementById("selM");
+fillSel(selN,"n","001A");fillSel(selM,"m","M1");
+function facts(box,s){box.innerHTML="<div>ส้น<b class='num'>"+s.heel+"</b></div><div>ปลาย<b class='num'>"+s.fore+"</b></div><div>drop<b class='num'>"+s.drop+"</b></div>"+
+  "<div>ดอกยาง<b class='num'>"+(s.lug?s.lug+" มม.":"เรียบ")+"</b></div><div>น้ำหนัก<b class='num'>"+s.w+"</b></div><div>ราคา<b class='num'>$"+s.usd+"</b></div>";}
+function updStack(){var a=byId[selN.value],b=byId[selM.value];drawShoe(document.getElementById("stackN"),a);drawShoe(document.getElementById("stackM"),b);facts(document.getElementById("factsN"),a);facts(document.getElementById("factsM"),b);}
+selN.addEventListener("change",updStack);selM.addEventListener("change",updStack);updStack();
+
+/* ---------- scatter ---------- */
+(function(){
+  var svg=document.getElementById("scatter"),W=720,H=400,m={l:56,r:24,t:16,b:48};
+  var x0=20,x1=45,y0=200,y1=300;
+  function X(v){return m.l+(v-x0)/(x1-x0)*(W-m.l-m.r);} function Y(v){return H-m.b-(v-y0)/(y1-y0)*(H-m.t-m.b);}
+  for(var gx=20;gx<=45;gx+=5){el("line",{x1:X(gx),y1:m.t,x2:X(gx),y2:H-m.b,stroke:"var(--line)","stroke-width":1},svg);
+    el("text",{x:X(gx),y:H-m.b+20,"text-anchor":"middle","font-size":12},svg).textContent=gx;}
+  for(var gy=200;gy<=300;gy+=25){el("line",{x1:m.l,y1:Y(gy),x2:W-m.r,y2:Y(gy),stroke:"var(--line)","stroke-width":1},svg);
+    el("text",{x:m.l-8,y:Y(gy)+4,"text-anchor":"end","font-size":12},svg).textContent=gy;}
+  el("text",{x:(m.l+W-m.r)/2,y:H-8,"text-anchor":"middle","font-size":13,fill:"var(--ink-2)"},svg).textContent="ความหนาพื้นที่ส้น (มม.) →  ยิ่งขวา ยิ่งนุ่ม";
+  var yl=el("text",{x:14,y:(m.t+H-m.b)/2,"text-anchor":"middle","font-size":13,transform:"rotate(-90 14 "+((m.t+H-m.b)/2)+")"},svg);yl.textContent="น้ำหนัก (ก.) ↑";
+  // zone annotations
+  el("text",{x:X(21),y:Y(296),"font-size":12,fill:"var(--ink-3)"},svg).textContent="บาง · รู้สึกพื้น";
+  el("text",{x:X(44.5),y:Y(206),"text-anchor":"end","font-size":12,fill:"var(--ink-3)"},svg).textContent="หนา · นุ่ม";
+  var lab={"000":[10,4,"start"],"001A":[10,4,"start"],"002":[10,4,"start"],"003":[10,4,"start"],"005":[10,4,"start"],"055":[0,-14,"middle"],
+           "R1":[-10,4,"end"],"H1":[10,4,"start"],"P1":[-10,4,"end"],"M1":[10,4,"start"],"T1":[10,4,"start"],"C1":[0,-14,"middle"]};
+  shoes.forEach(function(s){
+    var cx=X(s.heel),cy=Y(s.w),g=el("g",{class:"hit"},svg);
+    el("circle",{cx:cx,cy:cy,r:16,fill:"transparent"},g);
+    el("circle",{cx:cx,cy:cy,r:7,fill:col(s.b),stroke:"var(--surface)","stroke-width":2},g);
+    var L=lab[s.id];el("text",{x:cx+L[0],y:cy+L[1],"text-anchor":L[2],"font-size":13,fill:"var(--ink)","font-weight":600},g).textContent=s.id;
+    g.setAttribute("aria-label",brandName[s.b]+" "+s.id+" พื้นส้น "+s.heel+" มม. น้ำหนัก "+s.w+" กรัม");
+    bindTip(g,s);
+  });
+})();
+
+/* ---------- terrain lanes ---------- */
+(function(){
+  var svg=document.getElementById("lanes"),W=720,m={l:120,r:16,t:46},rowH=34;
+  var zones=["ถนน","กรวด / ดินเรียบ","เทรลทั่วไป","ภูเขาเทคนิค"];
+  var order=["R1","P1","C1","H1","M1","T1","001A","000","005","055","002","003"];
+  var H=m.t+order.length*rowH+12; svg.setAttribute("viewBox","0 0 "+W+" "+H);
+  function X(v){return m.l+v/4*(W-m.l-m.r);}
+  zones.forEach(function(z,i){
+    el("rect",{x:X(i),y:m.t-6,width:X(1)-X(0),height:order.length*rowH+6,fill:i%2?"var(--surface)":"var(--surface-2)"},svg);
+    el("text",{x:(X(i)+X(i+1))/2,y:m.t-16,"text-anchor":"middle","font-size":13,fill:"var(--ink-2)","font-weight":600},svg).textContent=zones[i];
+  });
+  order.forEach(function(id,i){
+    var s=byId[id],y=m.t+i*rowH,g=el("g",{class:"hit"},svg);
+    el("rect",{x:0,y:y,width:W,height:rowH,fill:"transparent"},g);
+    el("text",{x:m.l-12,y:y+rowH/2+5,"text-anchor":"end","font-size":13,fill:"var(--ink)","font-weight":600},g).textContent=brandName[s.b].replace("Mount to Coast","MtC")+" "+id;
+    el("rect",{x:X(s.t[0])+2,y:y+8,width:X(s.t[1])-X(s.t[0])-4,height:rowH-16,rx:4,fill:col(s.b)},g);
+    g.setAttribute("aria-label",brandName[s.b]+" "+id+" เหมาะกับ "+zones[Math.floor(s.t[0])]+" ถึง "+zones[Math.min(3,Math.ceil(s.t[1])-1)]);
+    bindTip(g,s);
+  });
+})();
+
+/* ---------- price bars ---------- */
+(function(){
+  var svg=document.getElementById("bars"),W=720,m={l:120,r:70,t:8},rowH=34;
+  var list=shoes.slice().sort(function(a,b){return a.b===b.b?b.usd-a.usd:(a.b==="n"?-1:1);});
+  var H=m.t+list.length*rowH+30; svg.setAttribute("viewBox","0 0 "+W+" "+H);
+  function X(v){return m.l+v/350*(W-m.l-m.r);}
+  for(var gx=0;gx<=350;gx+=50){el("line",{x1:X(gx),y1:m.t,x2:X(gx),y2:H-26,stroke:"var(--line)","stroke-width":1},svg);
+    el("text",{x:X(gx),y:H-8,"text-anchor":"middle","font-size":12},svg).textContent="$"+gx;}
+  list.forEach(function(s,i){
+    var y=m.t+i*rowH,g=el("g",{class:"hit"},svg);
+    el("rect",{x:0,y:y,width:W,height:rowH,fill:"transparent"},g);
+    el("text",{x:m.l-12,y:y+rowH/2+5,"text-anchor":"end","font-size":13,fill:"var(--ink)","font-weight":600},g).textContent=brandName[s.b].replace("Mount to Coast","MtC")+" "+s.id;
+    var bw=X(s.usd)-X(0);
+    el("path",{d:"M"+X(0)+" "+(y+7)+" h"+(bw-4)+" a4 4 0 0 1 4 4 v"+(rowH-22)+" a4 4 0 0 1 -4 4 h-"+(bw-4)+"Z",fill:col(s.b)},g);
+    el("text",{x:X(s.usd)+8,y:y+rowH/2+5,"font-size":13,fill:"var(--ink)"},g).textContent="$"+s.usd;
+    bindTip(g,s);
+  });
+})();
+
+/* ---------- cost per km ---------- */
+(function(){
+  var cN=document.getElementById("cN"),cM=document.getElementById("cM");
+  shoes.forEach(function(s){var o=document.createElement("option");o.value=s.id;o.textContent=s.id+" · ฿"+fmt(thb(s))+(s.thb?"":" (ประมาณ)");(s.b==="n"?cN:cM).appendChild(o);});
+  cN.value="001A";cM.value="R1";
+  var lifeN=document.getElementById("lifeN"),lifeM=document.getElementById("lifeM"),kmw=document.getElementById("kmw");
+  function upd(){
+    var a=byId[cN.value],b=byId[cM.value],la=+lifeN.value,lb=+lifeM.value,k=+kmw.value;
+    var pa=thb(a),pb=thb(b),ca=pa/la,cb=pb/lb;
+    document.getElementById("lifeNv").textContent=fmt(la)+" กม.";document.getElementById("lifeMv").textContent=fmt(lb)+" กม.";
+    document.getElementById("kmwv").textContent=k+" กม.";
+    document.getElementById("cpkN").textContent="฿"+ca.toFixed(2)+" / กม.";
+    document.getElementById("cpkM").textContent="฿"+cb.toFixed(2)+" / กม.";
+    document.getElementById("monN").textContent="ใช้ได้ราว "+(la/k/4.33).toFixed(1)+" เดือน ที่ "+k+" กม./สัปดาห์";
+    document.getElementById("monM").textContent="ใช้ได้ราว "+(lb/k/4.33).toFixed(1)+" เดือน ที่ "+k+" กม./สัปดาห์";
+    var need=Math.round(pa/cb/10)*10, ratio=(pa/pb).toFixed(2);
+    var msg="Norda "+a.id+" (฿"+fmt(pa)+") ต้องใช้ได้ถึง <b class='num'>"+fmt(need)+" กม.</b> ถึงจะมีต้นทุนต่อกิโลเท่ากับ MtC "+b.id+" ที่ใช้ได้ "+fmt(lb)+" กม. (ต้องทนกว่า "+ratio+" เท่า) ";
+    msg+= ca<cb ? "<br>ที่ระยะที่ตั้งไว้ตอนนี้ <b>Norda ถูกกว่าต่อกิโล</b> ฿"+(cb-ca).toFixed(2)
+                : "<br>ที่ระยะที่ตั้งไว้ตอนนี้ <b>MtC ถูกกว่าต่อกิโล</b> ฿"+(ca-cb).toFixed(2)+" · ถ้าวิ่ง "+fmt(la)+" กม. จะประหยัดได้ราว ฿"+fmt(Math.round((ca-cb)*la));
+    document.getElementById("breakeven").innerHTML=msg;
+  }
+  [cN,cM,lifeN,lifeM,kmw].forEach(function(n){n.addEventListener("input",upd);n.addEventListener("change",upd);});
+  upd();
+})();
+
+/* ---------- quiz ---------- */
+(function(){
+  var ans={};
+  var recs={
+    "001A":["n","Norda 001A","รุ่นหลักของแบรนด์ ใช้ได้ทุกแบบบนเทรล ผ้า Dyneema กับยาง Vibram พังยาก ลงเขาแล้วเท้าไม่พลิก"],
+    "005":["n","Norda 005","รุ่นแข่งที่ไม่มีแผ่นคาร์บอน เบาที่สุดของแบรนด์ (214 ก.) พื้นค่อนข้างบาง แต่ใช้โฟม Arnitel ที่เด้ง และยาง Megagrip Elite"],
+    "055":["n","Norda 055","รุ่นพื้นหนา 36 มม. ตัวแรกของ Norda ออกแบบให้ใส่วิ่งระยะร้อยไมล์ได้ แต่ยังยึดเกาะทางเทคนิค"],
+    "R1":["m","Mount to Coast R1","รุ่นแข่งถนนระยะอัลตร้า มีเชือกสองโซน ราคาไทย ฿5,750"],
+    "C1":["m","Mount to Coast C1","พื้นหนา 42 มม. นุ่มที่สุดของแบรนด์ เหมาะซ้อมยาวบนถนนทุกวัน ($180)"],
+    "H1":["m","Mount to Coast H1","ใช้ได้ทั้งถนนและทางดิน/กรวด ผู้รีวิวชมว่าวิ่งบนถนนได้ดี และรับทางดินได้สบาย ($160)"],
+    "T1":["m","Mount to Coast T1","รุ่นเทรลที่ใช้ยาง Vibram Megagrip เหมือน Norda แต่ราคาถูกกว่าราว $115 ($180)"],
+    "M1":["m","Mount to Coast M1","รุ่นเทรลระยะอัลตร้าตัวใหม่ โฟม JetCELL เด้งมาก เหมาะทางภูเขาที่ไม่โหดเกินไป ($195)"]
+  };
+  function decide(){
+    var t=ans.terrain,u=ans.use,b=ans.budget,id,note="";
+    if(t==="road"){id=u==="daily"?"C1":"R1";note="Norda ไม่มีรุ่นสำหรับวิ่งถนนเลย ผู้รีวิวบอกว่า 001A วิ่งถนนแล้วไม่ดี";}
+    else if(t==="mixed"){id=u==="ultra"?"M1":"H1";note="พื้นแบบนี้ Mount to Coast ได้เปรียบชัด ดอกยางลึกของ Norda จะรู้สึกเหมือนวิ่งบนปุ่มเวลาเจอช่วงถนน";}
+    else if(t==="trail"){
+      if(b==="high"){id=u==="race"?"005":(u==="ultra"?"055":"001A");note="ถ้างบไม่จำกัด ตัวเลือกสำรองคือ MtC "+(u==="ultra"?"M1":"T1")+" ที่ราคาถูกกว่าราวครึ่งหนึ่ง";}
+      else if(b==="mid"){id=u==="ultra"?"M1":"T1";note="ช่วงลดราคา Norda 001A บางสีเหลือ ฿7,960 ถ้าเจอก็น่าพิจารณา";}
+      else{id=u==="ultra"?"M1":"T1";}
+    } else { // tech
+      if(b==="high"){id=u==="race"?"005":(u==="ultra"?"055":"001A");note="ทางหิน ทางเอียง ทางลงชัน คือพื้นที่ที่ Norda ทำมาโดยตรง ถ้าเน้นปีนป่ายด้วย ดูรุ่น 000 ที่เพิ่งออก (ส.ค. 2026)";}
+      else if(b==="mid"){id="001A";note="ราคาป้าย ฿9,950 เกินงบ แต่ช่วงลดราคาบางสีเหลือ ฿7,960 (Banana Run) ถ้าหาไม่ได้ ตัวสำรองคือ MtC T1";}
+      else{id="T1";note="ข้อควรรู้: ทางหินเอียงแบบโหด ๆ T1 จะมั่นคงสู้ Norda ไม่ได้ และผู้รีวิวบอกว่า M1 ไม่เหมาะกับทางแบบนี้";}
+    }
+    var r=recs[id],box=document.getElementById("result");
+    box.className="result "+r[0];
+    box.innerHTML="<div class='muted'>รุ่นที่เหมาะกับนาย</div><div class='pick'><span class='dot "+r[0]+"' style='width:14px;height:14px'></span>"+r[1]+"</div><p>"+r[2]+"</p>"+(note?"<p class='muted'>"+note+"</p>":"")+"<p class='muted'><b>ไซซ์:</b> "+(r[0]==="n"?"Norda ต้องซื้อใหญ่ขึ้นครึ่งไซซ์ถึงหนึ่งไซซ์ ลองที่ร้านก่อน":(id==="M1"?"M1 ไซซ์เล็ก ผู้รีวิวแนะนำให้ซื้อใหญ่ขึ้นครึ่งไซซ์":"ใส่ไซซ์ปกติได้"))+" · <a href='#fit'>ดูหัวข้อไซซ์</a></p>"+"<a href='#stack' data-jump='"+id+"'>ดูความหนาพื้นของรุ่นนี้ ↑</a>";
+    box.querySelector("[data-jump]").addEventListener("click",function(){var s=byId[id];(s.b==="n"?selN:selM).value=id;updStack();});
+  }
+  document.querySelectorAll(".q").forEach(function(q){
+    var key=q.getAttribute("data-q");
+    q.querySelectorAll("button").forEach(function(btn){
+      btn.setAttribute("aria-pressed","false");
+      btn.addEventListener("click",function(){
+        q.querySelectorAll("button").forEach(function(o){o.setAttribute("aria-pressed",o===btn?"true":"false");});
+        ans[key]=btn.getAttribute("data-v");
+        if(ans.terrain&&ans.use&&ans.budget)decide();
+      });
+    });
+  });
+})();
+
+
+/* ---------- durability: lifespan ranges ---------- */
+(function(){
+  var svg=document.getElementById("life"),W=720,m={l:150,r:28,t:14},rowH=60,max=1800;
+  var rows=[
+    {lab:"Norda · แบรนด์บอก",b:"n",kind:"claim",a:700,z:1600,txt:"700–1,600 กม.",tip:"<b>Norda · หน้าคำถามที่พบบ่อย</b><br>แนะนำให้เปลี่ยนทุก 700 กม. (500 ไมล์) แต่บอกว่า “นักกีฬาหลายคนใช้เกิน 1,600 กม.” ส่วน 001A โฆษณาว่าทน “เกิน 1,000 กม.”"},
+    {lab:"Norda · ผู้รีวิวคาด",b:"n",kind:"rev",a:800,z:970,txt:"800–970 กม.",tip:"<b>WearTesters · Norda 001</b><br>คู่แรกใส่ได้ราว 500–600 ไมล์ แล้วค่อยเอาไปใส่เป็นรองเท้าวิ่งถนนเล่น ๆ",
+     pts:[[480,"<b>Adventure Worthy · 001</b><br>ใส่ 480 กม. ผ้าแทบไม่สึก พื้นยางเป็นตัวกำหนดอายุ",0],[180,"<b>Halfway Anywhere · 001A</b><br>เดินทางไกล 180 กม. ขึ้นลงรวม 30,500 ม. ยังไม่มีรอยสึกชัด",-8],[160,"<b>UltraRunning · 005</b><br>ใส่ 160 กม. โฟมยังไม่ยุบ",8]]},
+    {lab:"MtC · แบรนด์บอก",b:"m",kind:"claim",a:1600,z:1800,open:true,txt:"1,000 ไมล์ขึ้นไป (≈1,600 กม.+)",tip:"<b>Mount to Coast · ที่แบรนด์บอก</b><br>รองเท้าใช้ได้ “1,000 ไมล์ขึ้นไป” (Wellworthy) ยังไม่มีผลที่วัดได้ยืนยัน"},
+    {lab:"MtC · ผู้รีวิวคาด",b:"m",kind:"rev",a:480,z:640,txt:"480–640 กม.",tip:"<b>Weeviews · R1</b><br>“คาดว่าจะใช้ได้ราว 300–400 ไมล์” ผู้รีวิวประเมินไว้ตอนใส่ไปได้ 80 กม.",
+     pts:[[80,"<b>Weeviews · R1</b><br>ใส่ 80 กม. ยังไม่มีรอยสึกชัด"],[160,"<b>ผู้รีวิว T1 หลายราย</b><br>ใส่ราว 160 กม. พื้นยางแทบไม่สึก ผ้าไม่ขาด"]]}
+  ];
+  var H=m.t+rows.length*rowH+34; svg.setAttribute("viewBox","0 0 "+W+" "+H);
+  function X(v){return m.l+v/max*(W-m.l-m.r);}
+  for(var g=0;g<=max;g+=300){el("line",{x1:X(g),y1:m.t,x2:X(g),y2:H-30,stroke:"var(--line)","stroke-width":1},svg);
+    el("text",{x:X(g),y:H-12,"text-anchor":"middle","font-size":12},svg).textContent=fmt(g)+(g===max?" กม.":"");}
+  rows.forEach(function(r,i){
+    var y=m.t+i*rowH,cy=y+rowH/2,g=el("g",{class:"hit"},svg);
+    el("rect",{x:0,y:y,width:W,height:rowH,fill:"transparent"},g);
+    el("text",{x:m.l-12,y:cy+5,"text-anchor":"end","font-size":13,fill:"var(--ink)","font-weight":600},g).textContent=r.lab;
+    var x0=X(r.a),x1=X(r.z);
+    if(r.kind==="claim"){
+      el("rect",{x:x0,y:cy-11,width:x1-x0,height:22,rx:5,fill:"none",stroke:col(r.b),"stroke-width":2,"stroke-dasharray":"5 4"},g);
+      if(r.open)el("path",{d:"M"+(x1-2)+" "+(cy-6)+" l8 6 l-8 6",fill:"none",stroke:col(r.b),"stroke-width":2},g);
+      el("text",{x:r.open?x0-8:(x0+x1)/2,y:cy+5,"text-anchor":r.open?"end":"middle","font-size":13,fill:"var(--ink)"},g).textContent=r.txt;
+    } else {
+      el("rect",{x:x0,y:cy-11,width:x1-x0,height:22,rx:5,fill:col(r.b)},g);
+      el("text",{x:x1+8,y:cy+5,"font-size":13,fill:"var(--ink)","font-weight":600},g).textContent=r.txt;
+    }
+    g.addEventListener("pointerenter",function(e){showTip(r.tip,e);});g.addEventListener("pointermove",moveTip);g.addEventListener("pointerleave",hideTip);
+    (r.pts||[]).forEach(function(p){
+      var d=el("g",{class:"hit",tabindex:"0"},svg);
+      var py=cy+(p[2]||0);
+      el("circle",{cx:X(p[0]),cy:py,r:12,fill:"transparent"},d);
+      el("circle",{cx:X(p[0]),cy:py,r:6.5,fill:col(r.b),stroke:"var(--surface)","stroke-width":2},d);
+      d.addEventListener("pointerenter",function(e){e.stopPropagation();showTip(p[1],e);});d.addEventListener("pointermove",moveTip);d.addEventListener("pointerleave",hideTip);
+      d.addEventListener("focus",function(){var rr=d.getBoundingClientRect();showTip(p[1],{clientX:rr.right,clientY:rr.bottom});});d.addEventListener("blur",hideTip);
+    });
+  });
+})();
+
+/* ---------- durability: hotspot shoe ---------- */
+(function(){
+  var svg=document.getElementById("hotShoe");
+  drawShoe(svg,{id:"",b:"x",heel:30,fore:24,lug:4});
+  svg.setAttribute("aria-label","ภาพรองเท้าระบุ 4 จุดที่สึกหรอ");
+  [[292,90,1],[36,44,2],[150,116,3],[214,133,4]].forEach(function(p){
+    el("circle",{cx:p[0],cy:p[1],r:9,fill:"var(--ink)",stroke:"var(--surface)","stroke-width":2},svg);
+    el("text",{x:p[0],y:p[1]+4,"text-anchor":"middle","font-size":11,"font-weight":700,fill:"var(--bg)"},svg).textContent=p[2];
+  });
+})();
+
+/* ---------- dumbbell (value vs average) ---------- */
+function dumbbell(id,rows,min,max,unit,lowerBetter,step,dec){
+  var svg=document.getElementById(id),vb=svg.getAttribute("viewBox").split(" "),W=+vb[2],m={l:44,r:20,t:14},rowH=34;
+  var H=m.t+rows.length*rowH+26; svg.setAttribute("viewBox","0 0 "+W+" "+H);
+  function X(v){return m.l+(v-min)/(max-min)*(W-m.l-m.r);}
+  var nT=Math.round((max-min)/step);
+  for(var i=0;i<=nT;i++){var v=min+step*i;el("line",{x1:X(v),y1:m.t,x2:X(v),y2:H-22,stroke:"var(--line)","stroke-width":1},svg);
+    el("text",{x:X(v),y:H-6,"text-anchor":"middle","font-size":11},svg).textContent=(Math.round(v*10)/10)+(i===nT?" "+unit:"");}
+  rows.forEach(function(r,i){
+    var cy=m.t+i*rowH+rowH/2,g=el("g",{class:"hit"},svg);
+    el("rect",{x:0,y:cy-rowH/2,width:W,height:rowH,fill:"transparent"},g);
+    el("text",{x:m.l-10,y:cy+5,"text-anchor":"end","font-size":13,"font-weight":600,fill:"var(--ink)"},g).textContent=r.label;
+    el("line",{x1:X(r.v),y1:cy,x2:X(r.avg),y2:cy,stroke:"var(--ink-3)","stroke-width":2},g);
+    el("circle",{cx:X(r.avg),cy:cy,r:6,fill:"var(--surface)",stroke:"var(--ink-3)","stroke-width":2},g);
+    el("circle",{cx:X(r.v),cy:cy,r:7,fill:"var(--mtc)",stroke:"var(--surface)","stroke-width":2},g);
+    var worse=lowerBetter?r.v>r.avg:r.v<r.avg, tx=X(r.v)+(r.v>=r.avg?12:-12);
+    el("text",{x:tx,y:cy-9,"text-anchor":r.v>=r.avg?"start":"end","font-size":12,fill:"var(--ink)"},g).textContent=r.v.toFixed(dec)+" "+(r.v===r.avg?"":worse?"▼":"▲");
+    var tipTxt="<b>MtC "+r.label+"</b><br>ค่าของรุ่นนี้ "+r.v+" "+unit+" · ค่าเฉลี่ย "+r.avg+" "+unit+"<br>"+(r.v===r.avg?"เท่าค่าเฉลี่ย":(worse?"แย่กว่าค่าเฉลี่ย":"ดีกว่าค่าเฉลี่ย"))+" · ที่มา RunRepeat";
+    g.addEventListener("pointerenter",function(e){showTip(tipTxt,e);});g.addEventListener("pointermove",moveTip);g.addEventListener("pointerleave",hideTip);
+  });
+}
+dumbbell("labToe",[{label:"M1",v:1,avg:3.1},{label:"H1",v:2,avg:3.1},{label:"C1",v:2,avg:2.6}],0,5,"/5",false,1,0);
+dumbbell("labSole",[{label:"M1",v:0.8,avg:0.9},{label:"H1",v:1.4,avg:0.9},{label:"C1",v:1.0,avg:1.1}],0,1.6,"มม.",true,0.4,1);
+dumbbell("labToeW",[{label:"H1",v:70.1,avg:74.3},{label:"M1",v:73.0,avg:74.3},{label:"C1",v:73.2,avg:73.2}],68,76,"มม.",false,2,1);
+
+/* ---------- fit chips ---------- */
+(function(){
+  var data={n:[["001A","+½","แบรนด์แนะนำ (001 ก็เหมือนกัน)"],["005","+½","แบรนด์แนะนำ"],["002","+1","แบรนด์แนะนำ"],["003","+1","แบรนด์แนะนำ"],["000","+1","ใหญ่กว่ารองเท้าวิ่งปกติ 1 ไซซ์ หรือใหญ่กว่าไซซ์ Norda เดิมอีกครึ่ง เพราะผ้าไม่ยืด หัวกว้าง (Believe in the Run, Treeline)"],["055","?","ยังไม่เจอคำแนะนำ ควรลองก่อน"]],
+           m:[["R1","ตรง","หน้าเท้า: รีวิวไม่ตรงกัน มีทั้งที่ว่ากว้างและที่ว่าหัวเรียว"],["T1","ตรง","หน้าเท้าค่อนข้างกว้าง"],["H1","ตรง","ผลแล็บ: หัวแคบ 70.1 มม. (ค่าเฉลี่ย 74.3)"],["C1","ตรง","ผลแล็บ: ทรงกว้างกว่าค่าเฉลี่ย (98.2 กับ 95.2 มม.)"],["M1","+½","ผลแล็บบอกว่าเล็กไปนิด หัว 73.0 มม. ผู้รีวิวแนะนำให้ซื้อใหญ่ขึ้นครึ่งไซซ์ นิ้วโป้งเสียดจนใส่ไป 50 กม."],["P1","?","ยังไม่มีข้อมูล"]]};
+  ["n","m"].forEach(function(b){
+    var box=document.getElementById(b==="n"?"sizesN":"sizesM");
+    data[b].forEach(function(r){var d=document.createElement("div");d.className="sz";
+      d.innerHTML="<span class='chip "+b+"'>"+r[1]+"</span><div><b>"+r[0]+"</b><div class='muted'>"+r[2]+"</div></div>";box.appendChild(d);});
+  });
+})();
+
+/* ---------- climate ---------- */
+(function(){
+  var lab={good:"✔ เหมาะ",warn:"▲ ระวัง",bad:"✖ เลี่ยง",na:"? ไม่มีข้อมูล"};
+  var data={n:[["005","good","ผ้าตาข่ายโปร่ง มีรูเล็ก ๆ ช่วยระบายความร้อน ผู้รีวิวบอกว่าระบายอากาศ “ยอดเยี่ยม”"],["002","good","ผ้าโปร่งกว่า 001 ระบายอากาศดีขึ้น แต่กันน้ำได้แค่ฝนปรอย"],["001A","warn","ผ้าทอแน่น ปกติแห้งเร็ว แต่ถ้าเปียกจนชุ่มจะแห้งช้ากว่ารองเท้าเทรลทั่วไปมาก"],["รุ่น G+","bad","กันน้ำได้ถึง 10,000 มม. ใส่แล้วร้อน ไม่เหมาะอากาศไทย"],["000","warn","ผ้า Dyneema ไร้ตะเข็บ ผู้รีวิวบอกว่าร้อนและระบายอากาศไม่ดี ไม่เหมาะใส่หน้าร้อน"],["003 · 055","na","ยังไม่มีข้อมูลเรื่องระบายอากาศ"]],
+           m:[["M1","good","ผลแล็บระบายอากาศ 111 ค่าเฉลี่ย 71 โปร่งกว่าเฉลี่ยมาก ส่วนแห้งเร็วพอ ๆ ค่าเฉลี่ย (49% กับ 51%)"],["H1","good","ผลแล็บระบายอากาศ 4/5 (ค่าเฉลี่ย 3.2)"],["C1","good","ผลแล็บ 4/5 (ค่าเฉลี่ย 3.6) ผ้าหัวบางเลยโปร่ง แต่ก็ทำให้ทนน้อย"],["T1","good","ลิ้นรองเท้ากันน้ำซึม ผ้าระบายอากาศ แห้งเร็ว"],["R1","warn","รีวิวไม่ตรงกัน WearTesters ว่าผ้าสองชั้นทำให้ร้อนในอากาศชื้น ส่วน Doctors of Running ว่า “ระบายดีเกินคาด”"]]};
+  ["n","m"].forEach(function(b){
+    var box=document.getElementById(b==="n"?"climN":"climM");
+    data[b].forEach(function(r){var d=document.createElement("div");d.className="cl";
+      d.innerHTML="<div class='cl-h'><b>"+r[0]+"</b><span class='st "+r[1]+"'>"+lab[r[1]]+"</span></div><div class='muted'>"+r[2]+"</div>";box.appendChild(d);});
+  });
+})();
+
+/* ---------- stability on slope ---------- */
+(function(){
+  var svg=document.getElementById("slope"),k=2.4,ang=-12;
+  [["001A",0],["M1",340]].forEach(function(p){
+    var s=byId[p[0]],ox=p[1],cx=ox+170,gy=190,h=s.heel*k;
+    el("text",{x:cx,y:22,"text-anchor":"middle","font-size":15,"font-weight":700,fill:col(s.b)},svg).textContent=brandName[s.b]+" "+s.id;
+    var g=el("g",{transform:"rotate("+ang+" "+cx+" "+gy+")"},svg);
+    el("rect",{x:ox+18,y:gy,width:304,height:26,fill:"var(--surface-2)"},g);
+    el("line",{x1:ox+18,y1:gy,x2:ox+322,y2:gy,stroke:"var(--ink-3)","stroke-width":2},g);
+    el("rect",{x:cx-60,y:gy-h,width:120,height:h,rx:6,fill:col(s.b)},g);
+    el("rect",{x:cx-60,y:gy-4,width:120,height:4,fill:"var(--sole)"},g);
+    el("ellipse",{cx:cx,cy:gy-h-9,rx:52,ry:9,fill:"var(--ink-3)"},g);
+    el("line",{x1:cx+76,y1:gy,x2:cx+76,y2:gy-h,stroke:"var(--ink)","stroke-width":1.5},g);
+    el("line",{x1:cx+70,y1:gy-h,x2:cx+82,y2:gy-h,stroke:"var(--ink)","stroke-width":1.5},g);
+    el("text",{x:cx+86,y:gy-h/2+5,"font-size":14,"font-weight":700,fill:"var(--ink)"},g).textContent=s.heel+" มม.";
+  });
+  el("text",{x:340,y:262,"text-anchor":"middle","font-size":13,fill:"var(--ink-2)"},svg).textContent="ยิ่งเท้าอยู่สูงจากพื้น แรงที่ทำให้ข้อเท้าพลิกบนทางเอียงยิ่งมาก";
+})();
+
+/* ---------- calc presets ---------- */
+(function(){
+  var P={rev:[880,560],claim:[1000,1600],eq:[1000,1000]};
+  document.querySelectorAll("[data-p]").forEach(function(b){
+    b.addEventListener("click",function(){
+      document.querySelectorAll("[data-p]").forEach(function(o){o.setAttribute("aria-pressed",o===b?"true":"false");});
+      var v=P[b.getAttribute("data-p")],ln=document.getElementById("lifeN"),lm=document.getElementById("lifeM");
+      ln.value=v[0];lm.value=v[1];ln.dispatchEvent(new Event("input"));
+    });
+  });
+})();
+
+
+/* ---------- head to head: 055 vs M1 ---------- */
+(function(){
+  var N=byId["055"],M=byId["M1"];
+  drawShoe(document.getElementById("h2hN"),N);
+  drawShoe(document.getElementById("h2hM"),M);
+
+  // tug-of-war
+  var rows=[
+    ["ยึดเกาะ",-2,"<b>055</b> ยาง Megagrip Elite ผู้รีวิวบอก “ไม่เคยใส่รองเท้าเทรลที่เกาะกว่านี้” ได้ 9.5/10<br><b>M1</b> แล็บวัดได้ 0.77 (ค่าเฉลี่ย 0.67) แต่จิกดินนิ่มไม่ค่อยได้"],
+    ["มั่นคงทางเทคนิค",-1,"<b>055</b> ผู้รีวิวส่วนใหญ่ให้สูง บอกว่า “มั่นคงที่สุดตัวหนึ่งในรองเท้าพื้นหนา”<br><b>M1</b> เท้าไถลตอนลงชัน · แต่ผู้รีวิวคนหนึ่งที่ใส่ทั้งคู่บอกว่า M1 มั่นคงกว่า เลยยังไม่ขาด"],
+    ["ความเด้ง ความสบาย",0,"<b>055</b> เด้ง รองรับเท้าดี ใส่ไปราว 80 กม. แล้วโฟมยิ่งดี<br><b>M1</b> นุ่ม คืนพลังงาน 71.8% ในแล็บ · ขึ้นกับความชอบ"],
+    ["ความทนของผ้า",-2,"<b>055</b> ผ้า Dyneema ผู้รีวิวให้ 5/5 บอกว่า “อาจทนที่สุดในตลาด”<br><b>M1</b> ผ้าหัวรองเท้าได้ 1/5 ในแล็บ (ค่าเฉลี่ย 3.1)"],
+    ["ความทนของพื้นยาง",1,"<b>055</b> ยางนิ่ม ดอกยางด้านหน้าสึกชัดตั้งแต่ราว 100 กม.<br><b>M1</b> แล็บวัดว่าสึก 0.8 มม. ดีกว่าค่าเฉลี่ย 0.9"],
+    ["อากาศร้อนชื้น",2,"<b>055</b> ความเห็นแตก บางคนว่าระบายดี อีกคนว่าพอใช้ และแห้งช้าหลังลุยน้ำ<br><b>M1</b> แล็บวัดการระบายอากาศได้ 111 (ค่าเฉลี่ย 71) ระบายน้ำดีมาก"],
+    ["น้ำหนัก",1,"ที่ไซซ์ US M11–11.5: <b>055</b> หนัก 330–336 ก. · <b>M1</b> หนัก 303 ก."],
+    ["ราคา",2,"<b>055</b> $325 · <b>M1</b> $195 ถูกกว่า $130"]
+  ];
+  var svg=document.getElementById("tug"),W=720,L=180,R=690,C=(L+R)/2,u=(R-L)/2/2.4,rowH=50,top=40;
+  var H=top+rows.length*rowH+8; svg.setAttribute("viewBox","0 0 "+W+" "+H);
+  el("text",{x:L,y:22,"font-size":13,"font-weight":700,fill:"var(--norda)"},svg).textContent="← 055 ดีกว่า";
+  el("text",{x:R,y:22,"text-anchor":"end","font-size":13,"font-weight":700,fill:"var(--mtc)"},svg).textContent="M1 ดีกว่า →";
+  el("line",{x1:C,y1:32,x2:C,y2:H-6,stroke:"var(--ink-3)","stroke-width":1.5,"stroke-dasharray":"3 3"},svg);
+  el("text",{x:C,y:22,"text-anchor":"middle","font-size":12,fill:"var(--ink-3)"},svg).textContent="เสมอ";
+  rows.forEach(function(r,i){
+    var cy=top+i*rowH+rowH/2+6,g=el("g",{class:"hit",tabindex:"0"},svg),v=r[1];
+    el("rect",{x:0,y:cy-rowH/2,width:W,height:rowH,fill:"transparent"},g);
+    el("text",{x:0,y:cy+5,"font-size":14,"font-weight":600,fill:"var(--ink)"},g).textContent=r[0];
+    el("line",{x1:L,y1:cy,x2:R,y2:cy,stroke:"var(--line)","stroke-width":6,"stroke-linecap":"round"},g);
+    var c=v<0?"var(--norda)":(v>0?"var(--mtc)":"var(--ink-3)"),x=C+v*u;
+    if(v!==0)el("line",{x1:C,y1:cy,x2:x,y2:cy,stroke:c,"stroke-width":10,"stroke-linecap":"round"},g);
+    el("circle",{cx:x,cy:cy,r:9,fill:c,stroke:"var(--surface)","stroke-width":2.5},g);
+    var lab=v===0?"เสมอ":(v<0?"055":"M1")+(Math.abs(v)===2?" ชนะขาด":" ชนะนิด");
+    el("text",{x:x,y:cy-15,"text-anchor":"middle","font-size":12,fill:"var(--ink-2)"},g).textContent=lab;
+    g.setAttribute("aria-label",r[0]+": "+lab);
+    g.addEventListener("pointerenter",function(e){showTip(r[2],e);});g.addEventListener("pointermove",moveTip);g.addEventListener("pointerleave",hideTip);
+    g.addEventListener("focus",function(){var rr=g.getBoundingClientRect();showTip(r[2],{clientX:rr.left+rr.width/2,clientY:rr.bottom});});g.addEventListener("blur",hideTip);
+  });
+
+  // wear maps
+  var glyph={good:"✔",warn:"▲",bad:"✖"},name={good:"ทนมาก",warn:"ระวัง",bad:"จุดอ่อน"};
+  function geo(s){var G=134,lug=s.lug||1.2,B=G-lug,Hh=B-s.heel,Hf=B-s.fore;function mt(x){return Hh+(Hf-Hh)*(x-60)/234;}
+    return {toe:[292,Hf-14],heel:[36,Hh-48],mid:[150,(B+mt(150))/2],lugs:[262,G-2],upper:[185,mt(185)-34]};}
+  function wear(svgId,listId,s,marks){
+    var svg=document.getElementById(svgId),g=geo(s),box=document.getElementById(listId);
+    drawShoe(svg,s);
+    marks.forEach(function(m,i){var p=g[m[0]];
+      el("circle",{cx:p[0],cy:p[1],r:10,fill:"var(--"+(m[1]==="warn"?"warnc":m[1])+")",stroke:"var(--surface)","stroke-width":2.5},svg);
+      el("text",{x:p[0],y:p[1]+4.5,"text-anchor":"middle","font-size":12,"font-weight":700,fill:"#fff"},svg).textContent=i+1;
+      var d=document.createElement("div");d.className="wl";
+      d.innerHTML="<span class='wl-n'>"+(i+1)+"</span><span class='st "+m[1]+"'>"+glyph[m[1]]+" "+name[m[1]]+"</span><span>"+m[2]+"</span>";box.appendChild(d);});
+  }
+  wear("wearN","wearListN",N,[["upper","good","ผ้า Dyneema และยางหุ้มรอบ “อาจทนที่สุดในตลาด”"],["mid","good","โฟม Arnitel ไม่ยุบเร็ว ผู้รีวิวคาดว่าใช้ได้ราว 800 กม."],["lugs","bad","ยางนิ่ม ดอกยางด้านหน้าสึกชัดตั้งแต่ราว 100 กม. ส่วนที่เหลือยังดี"],["heel","warn","ส้นเสียดตอนขึ้นเนินชัน (เป็นเรื่องความสบาย ไม่ใช่การสึก) ดีขึ้นเมื่อใส่ไปสักพัก"]]);
+  wear("wearM","wearListM",M,[["toe","bad","ผ้าหัวรองเท้าได้ 1/5 ในแล็บ (ค่าเฉลี่ย 3.1) แต่มียางกันชนหัวช่วย"],["upper","warn","มีรอยหินเจาะผ้าหลังใส่ราว 110 กม. แต่แค่ผิวนอก"],["lugs","good","พื้นยางแล็บวัดว่าสึก 0.8 มม. ดีกว่าค่าเฉลี่ย 0.9"],["heel","good","บุส้นด้านในได้ 5/5 ในแล็บ (ค่าเฉลี่ย 3.1)"]]);
+
+  // scenarios
+  var sc={
+    rock:["n","Norda 055","เกาะกว่า มั่นคงกว่า และคอหุ้มข้อเท้ากันกรวดเข้า เส้นทางแบบนี้คือสิ่งที่ 055 ทำมาโดยตรง","ระวังดอกยางด้านหน้าสึกเร็ว ถ้าทางหินคมมาก อาจต้องเปลี่ยนเร็วกว่าที่คิด"],
+    run:["m","MtC M1","เบากว่า เด้งกว่า และระบายอากาศดีกว่าค่าเฉลี่ยมาก เหมาะกับอากาศร้อนชื้นแบบไทย","อย่าใส่ลงทางหินเอียงแบบโหด ๆ ผู้รีวิวหลายคนบอกว่าเท้าไถล"],
+    budget:["m","MtC M1","ถูกกว่า $130 พื้นยางทน ส่วน 055 ดอกยางหน้าสึกเร็ว ถ้าใช้ซ้อมบ่อยจะยิ่งแพง","ผ้าหัวรองเท้าบาง ถ้าชอบเตะหินจะขาดก่อนส่วนอื่น"],
+    ankle:["n","Norda 055 หรือรุ่นที่พื้นเตี้ยกว่า","ระหว่างสองรุ่นนี้ 055 มั่นคงกว่า แต่ถ้าข้อเท้าพลิกง่ายจริง พื้นเตี้ยจะปลอดภัยกว่า เช่น Norda 000 หรือ 001A ที่หนา 26 มม.","ดูภาพพื้นเอียงในหัวข้อความมั่นคงประกอบได้"]
+  };
+  var bs=document.querySelectorAll("#scen button");
+  bs.forEach(function(b){b.setAttribute("aria-pressed","false");b.addEventListener("click",function(){
+    bs.forEach(function(o){o.setAttribute("aria-pressed",o===b?"true":"false");});
+    var r=sc[b.getAttribute("data-s")],box=document.getElementById("scenOut");
+    box.className="result "+r[0];
+    box.innerHTML="<div class='pick'><span class='dot "+r[0]+"' style='width:14px;height:14px'></span>"+r[1]+"</div><p>"+r[2]+"</p><p class='muted'>"+r[3]+"</p>";
+  });});
+})();
+
+/* ---------- spec table ---------- */
+(function(){
+  var tb=document.querySelector("#specTable tbody");
+  ["n","m"].forEach(function(b){
+    var gr=document.createElement("tr");gr.className="grp";gr.innerHTML="<td colspan='10'><span class='dot "+b+"'></span> "+brandName[b]+"</td>";tb.appendChild(gr);
+    shoes.filter(function(s){return s.b===b;}).forEach(function(s){
+      var tr=document.createElement("tr");
+      tr.innerHTML="<td><b>"+s.id+"</b></td><td>"+s.role+"</td><td class='r num'>"+s.heel+" / "+s.fore+"</td><td class='r num'>"+s.drop+"</td><td class='r num'>"+s.w+" ก.<br><span class='muted'>"+s.ws+"</span></td><td class='r num'>"+(s.lug?s.lug+" มม.":"–")+"</td><td>"+s.foam+"</td><td>"+s.sole+"</td><td class='r num'>$"+s.usd+"</td><td class='r num'>"+(s.thb?"฿"+fmt(s.thb):"–")+"</td>";
+      tb.appendChild(tr);
+    });
+  });
+})();
+})();
+</script>
+</body>
+</html>
